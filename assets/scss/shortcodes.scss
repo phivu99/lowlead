@@ -11,12 +11,12 @@
     max-width    : 100%;
 }
 
-.tf-section {
+.tf-section2 {
     padding: 118px 0;
     @include transition3;
 }
 
-.tf-section2 {
+.tf-section {
     padding: 120px 0;
     @include transition3;
 }
@@ -613,12 +613,13 @@
             margin-bottom: 41px;
         }
         .meta {
-            margin-bottom: 10px;
+            margin-bottom: 6px;
         }
         h2 {
             font-weight: 500;
             font-size: 32px;
-            margin-bottom: 36px;
+            margin-bottom: 33px;
+            line-height: 39px;
         }
         .sc-card-article {
             margin-bottom: 40px;
@@ -627,31 +628,7 @@
         }
         .text {
             margin-bottom: 40px;
-        }
-        .img-box {
-            display: flex;
-            margin-bottom: 38px;
-            .img-blog {
-                margin-right: 30px;
-            }
-            ul {
-                display: flex;
-                align-items: center;
-                margin-bottom: 29px;
-                margin-top: -1px;
-                &:last-child {
-                    margin-bottom: 0;
-                }
-                li {
-                    i {
-                        margin-right: 11.5px;
-                        font-size: 16px;
-                    }
-                    h4 {
-                        font-weight: 400;
-                    }
-                }
-            }
+            padding-left: 1px;
         }
         .post-image {
             display         : flex;
@@ -667,13 +644,11 @@
                 &::before {
                     content: '';
                     position: absolute;
-                    width: 4px;
-                    height: 90px;
+                    width: 5px;
+                    height: 130px;
                     left: 0;
-                    top: 5px;
-                    background-color: var(--primary-color3);
-                    border-top-right-radius: 5px;
-                    border-bottom-right-radius: 5px;
+                    top: 0px;
+                    background: #F6F6F6;
                 }          
             }
             .box-title {
@@ -687,7 +662,40 @@
                     line-height: 30px;
                 }
             }
-           
+        }
+        
+        .img-box {
+            display: flex;
+            margin-bottom: 37px;
+            .img-blog {
+                margin-right: 30px;
+            }
+            ul {
+                display: flex;
+                align-items: center;
+                margin-bottom: 25px;
+                margin-top   : -3px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                li {
+                    i {
+                        margin-right: 10px;
+                        font-size: 16px;
+                        color: var(--primary-color3);
+                    }
+                    h4 {
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+       
+        .video-blog {
+            margin-bottom: 45px;
+        }
+        .title-h3  {
+            margin-bottom: 16px;
         }
         .text-2 {
             padding-left: 2px;
@@ -699,86 +707,126 @@
             margin-bottom: 30px;
         }
         .infor-row {
-            justify-content: space-between;
-            margin-bottom  : 46px;
+            margin-bottom  : 53px;
             .tags {
-                h4 {                 
-                    margin-right: 19.5px;
-                    margin-left: 0.5px;
-                    font-weight: 600;   
-                    align-self: center;             
+                .title-tag {                 
+                    margin-right: 29px;         
                 }
-                div {
-                    a {
-                        padding         : 14px 18px 12px;
-                        border-radius   : 5px;                      
-                        font-size       : 12px;
-                        font-weight     : 400;
-                        margin-right    : 24px;
-                        background-color: var(--primary-color10);
-                        color           : var(--primary-color4);
-                        border: 1px solid var(--primary-color6);
-                        &.active,
-                        &:hover {
-                            background-color: var(--primary-color3);
-                            color           : #fff;
-                        }
+                
+                a {
+                    padding: 15px 19.5px 13px;
+                    font-size: 12px;
+                    font-weight: 400;
+                    margin-right: 6px;
+                    background-color: var(--primary-color8);
+                    color: var(--primary-color4);
+                    
+                    &.active,
+                    &:hover {
+                        background-color: var(--primary-color3);
+                        color           : #fff;
                     }
                 }
+                
             }
         }
-        .button {
-            box-shadow: 0px 14px 14px rgba(95, 58, 252, 0.18);
+        
+    }
+}
+
+// flat video
+
+.post-video {
+    position: relative;
+    a {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100px;
+        height: 100px;
+        background: var(--primary-color3);
+        border-radius: 50%;
+        text-align: center;
+        line-height: 110px;
+        i {
+            font-size: 24px;
+        }
+        &:hover {
+            background: var(--primary-color2);
+            span {
+                path {
+                    fill:#fff;
+                    @include transition3;
+                }
+            }
         }
     }
 }
 
+.ripple::before,
+.ripple::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -ms-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transform: translate(-50%, -50%);
+    -ms-box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.849);
+    -o-box-shadow: 0 0px 0 0px rgba(255, 255, 255, 0.883);
+    box-shadow: 0px 0px 0px 30px rgb(255 255 255 / 10%);
+    -webkit-animation: ripple 2s infinite;
+    animation: ripple 2s infinite;
+}
+
+.ripple::before {
+    content: "";
+    position: absolute;
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+
+.ripple::after {
+    content: "";
+    position: absolute;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
 #comments {
     .title-comment {
-        margin-left: -1px;
-        margin-bottom: 19px;
+        margin-bottom: 14px;
     }
     .comment-list {
-        margin-bottom: 42px;
+        .comment-01 {
+            border-bottom: 1px solid var(--primary-color6);
+            padding-bottom: 40px;
+            margin-bottom: 47px;
+            &:last-child {
+                margin: 0;
+                border: unset;
+                padding-bottom: 35px;
+            }
+        }
+
         .comment-avatar {
             width: 29%;
             padding-top: 3px;
         }
         .comment-content {
-            .comment-text {
-                border-bottom: 1px solid var(--primary-color6);
-                padding-bottom: 20px;
-                margin-bottom: 20px;
-            }
-            .comment-icon {
-                font-size: 14px;
-                font-weight: 400; 
-                .icon-one {
-                    margin-right: 42px ;
-                    &::before {
-                        content: '\f3e5';
-                        font-family: "Font Awesome 5 Pro";
-                        font-weight: 700;
-                        margin-right: 6px;
-                        margin-left: 2px;
-                        font-size: 14px;
-                    }
-                }
-                .icon-two {
-                    &::before {
-                        content: '\f004';
-                        font-family: "Font Awesome 5 Pro";
-                        font-weight: 700;
-                        margin-right: 6px;
-                        margin-left: 2px;
-                        font-size: 14px;
-                    }
-                }   
+            .comment-author {
+                margin-bottom: 18px;
             }
         }
     }
     .title-comment2 {
-        margin-bottom: 21px;
+        margin-bottom: 16px;
     }
     .comment-form {
         fieldset {
@@ -823,6 +871,9 @@
                 color: #B14233;
                 margin-left: 1px;
             }
+        }
+        .button {
+            padding: 14.5px 34px;
         }
     }
 }
