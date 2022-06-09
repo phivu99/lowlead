@@ -17,6 +17,7 @@
 
     <!-- Theme Style -->
     <link rel="stylesheet" type="text/css" href="assets/dist/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/scss/style.scss">
 
     <!-- Reponsive -->
     <link rel="stylesheet" type="text/css" href="assets/dist/responsive.css">
@@ -77,10 +78,10 @@
                                     <div class="mobile-button"><span></span></div><!-- /.mobile-button -->
                                     <nav id="main-nav" class="main-nav">
                                         <ul id="menu-primary-menu" class="menu">
-                                            <li class="menu-item menu-item-has-children">
-                                                <a href="#">Home</a>
+                                            <li class="menu-item menu-item-has-children current-menu-item">
+                                                <a href="index.html">Home</a>
                                                 <ul class="sub-menu">
-                                                    <li class="menu-item"><a href="index.html">Home 01</a></li>
+                                                    <li class="menu-item current-item"><a href="index.html">Home 01</a></li>
                                                     <li class="menu-item"><a href="home2.html">Home 02</a></li>
                                                     <li class="menu-item"><a href="home3.html">Home 03</a></li>
                                                 </ul>
@@ -111,10 +112,10 @@
                                                 </ul>                              
                                             </li>
 
-                                            <li class="menu-item menu-item-has-children current-menu-item">
+                                            <li class="menu-item menu-item-has-children">
                                                 <a href="#">Blog</a>
                                                 <ul class="sub-menu">
-                                                    <li class="menu-item current-item"><a href="blog.html">Blog</a></li>
+                                                    <li class="menu-item"><a href="blog.html">Blog</a></li>
                                                     <li class="menu-item"><a href="blog-details.html">Blog Details</a></li> 
                                                     <li class="menu-item"><a href="blog-details-sidebar.html">Blog Details Sidebar</a></li>                                    
                                                 </ul>
@@ -141,123 +142,187 @@
             </header>
                 
             <!-- title page -->
-            <section class="flat-title-page inner"><div class="overlay"></div> 
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="page-title-heading">
-                                <h1 class="heading">Blog Page</h1>
-                                <a href="index.html"><h5 class="text-color-3">Back To Home Page</h5></a> 
-                            </div>                        
+            
+                <section class="slider home">
+                    <div class="swiper-container mainslider">                            
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slider-item">
+                                    <div class="flat-slider">  
+                                        <div class="img-slider">
+                                            <img class="img-item" src="assets/images/slider/slider-2.jpg" alt=""><div class="overlay"></div> 
+                                        </div>
+                                        <div class="container">                                    
+                                            <div class="content">
+                                                <div class="heading">
+                                                    <h1>The best success in <br> history is ours.</h1>
+                                                </div>
+                                                <div class="flat-bt-slider">
+                                                    <div class="sc-btn-top" id="site-header">
+                                                        <a href="connect-wallet.html" class="sc-button btn-1 btn-2"><span>Discover More
+                                                        </span></a>
+                                                    </div>  
+                                                </div>                            
+                                            </div>                                        
+                                        </div>
+                                    </div>
+                                </div>                             
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider-item">
+                                    <div class="flat-slider"> 
+                                        <div class="img-slider">
+                                            <img class="img-item" src="assets/images/slider/slider-2.jpg" alt=""><div class="overlay"></div> 
+                                        </div>
+                                        <div class="container">
+                                            <div class="content">
+                                                <div class="heading">
+                                                    <h1>The best success in <br> history is ours.</h1>
+                                                </div>
+                                                <div class="flat-bt-slider">
+                                                    <div class="sc-btn-top" id="site-header">
+                                                        <a href="connect-wallet.html" class="sc-button btn-1 btn-2"><span>Discover More
+                                                        </span></a>
+                                                    </div>  
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                             
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider-item">
+                                    <div class="flat-slider"> 
+                                        <div class="img-slider">
+                                            <img class="img-item" src="assets/images/slider/slider-2.jpg" alt=""><div class="overlay"></div> 
+                                        </div>
+                                        <div class="container">
+                                            <div class="content">
+                                                <div class="heading">
+                                                    <h1>The best success in <br> history is ours.</h1>
+                                                </div>
+                                                <div class="flat-bt-slider">
+                                                    <div class="sc-btn-top" id="site-header">
+                                                        <a href="connect-wallet.html" class="sc-button btn-1 btn-2"><span>Discover More
+                                                        </span></a>
+                                                    </div>  
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                             
+                            </div>
                         </div>
                     </div>
-                </div>                    
-            </section>
+                    <div class="button-custom-slider">
+                        <div class="swiper-button-next button-slide-custom-next"></div>
+                        <div class="swiper-button-prev button-slide-custom-prev"></div>
+                    </div>
+                </section>         
 
-            <section class="tf-section2 flat-blog">
+            <section class="tf-section2 flat-practice">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12">
                             <div class="heading-section center">
-                                <h5>CASES WE SOLVED</h5>
-                                <h2 class="title-section">Latest <span class="text-color-3">News</span> & Blogs</h2>
+                                <h5 class="text-u">What We Are Expart At</h5>
+                                <h2 class="title-section">Legal <span class="text-color-3">Practice</span> Areas</h2>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="blog-box tf-img hover-img">
-                                <div class="media">
-                                    <img class="img-item" src="assets/images/blog/blog-1.jpg" alt="">
-                                </div>  
-                                <div class="content">
-                                    <div class="meta text-p">by <a href="#" class="user text-color-3">Themesflat  </a>  <span>Attorney</span> </div>
-                                    <h3 class="fw-5"><a href="blog-details.html">Domestic Violence in California – How a Lawyer Can Help.</a></h3>
-                                    <div class="sc-btn-button">
-                                        <a href="blog-details.html" class="sc-button btn-1"><span>Discover More</span></a>
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="swiper-container carousel-1 show-boder ">
+                                <div class="swiper-wrapper slider-style">                               
+                                    <div class="swiper-slide">
+                                        <div class="practice-box blog-box hover-img">
+                                            <div class="box-img relative">
+                                                <div class="media">
+                                                     <img class="img-item" src="assets/images/box-item/practice-1.jpg" alt="">
+                                                     <a href="#" class="icon-practice absolute" ><img src="assets/images/icon/icon-practice.png" alt=""></a>
+                                                </div>                         
+                                            </div>
+                                            <!-- <div class="content flex-two">
+                                               <div class="title-box flex-three">
+                                                    <h1>C</h1>
+                                                   <div class="inner">
+                                                        <p>Real Specialist</p>
+                                                        <h3><a href="blog-details.html">ar <span>Accidents Law.</span></a></h3>
+                                                   </div>
+                                               </div>
+                                                <div class="sc-btn-button">
+                                                    <a href="blog-details.html" class="sc-button btn-1"><span><i class="fal fa-long-arrow-right link-icon "></i></span></a>
+                                                </div>
+                                            </div>                                                                 
+                                        </div>
                                     </div>
-                                </div>                                                                 
-                            </div>                        
-                        </div>
-                                   
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="blog-box tf-img hover-img">
-                                <div class="media">
-                                    <img class="img-item" src="assets/images/blog/blog-2.jpg" alt="">
-                                </div>  
-                                <div class="content">
-                                    <div class="meta text-p">by <a href="#" class="user text-color-3">Themesflat  </a>  <span>Attorney</span> </div>
-                                    <h3 class="fw-5"><a href="blog-details.html">Nulla facilisi. Aenean nisi sem, vestibulum vel lacus in.</a></h3>
-                                    <div class="sc-btn-button">
-                                        <a href="blog-details.html" class="sc-button btn-1"><span>Discover More</span></a>
+                                    <div class="swiper-slide">
+                                        <div class="practice-box blog-box hover-img">
+                                            <div class="box-img relative">
+                                                <div class="media">
+                                                     <img class="img-item" src="assets/images/box-item/practice-2.jpg" alt="">
+                                                     <a href="#" class="icon-practice absolute" ><img src="assets/images/icon/icon-practice.png" alt=""></a>
+                                                </div>                         
+                                            </div>
+                                            <div class="content flex-two">
+                                               <div class="title-box flex-three">
+                                                    <h1>M</h1>
+                                                   <div class="inner">
+                                                        <p>Legal Advice</p>
+                                                        <h3><a href="blog-details.html">edical Lawyer.</a></h3>
+                                                   </div>
+                                               </div>
+                                                <div class="sc-btn-button">
+                                                    <a href="blog-details.html" class="sc-button btn-1"><span><i class="fal fa-long-arrow-right link-icon "></i></span></a>
+                                                </div>
+                                            </div>                                                                 
+                                        </div>       
                                     </div>
-                                </div>                                                                 
-                            </div>                        
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="blog-box tf-img hover-img">
-                                <div class="media">
-                                    <img class="img-item" src="assets/images/blog/blog-3.jpg" alt="">
-                                </div>  
-                                <div class="content">
-                                    <div class="meta text-p">by <a href="#" class="user text-color-3">Themesflat  </a>  <span>Attorney</span> </div>
-                                    <h3 class="fw-5"><a href="blog-details.html">Fusce tincidunt commodo sapien, quis porttitor ipsum fringilla et.</a></h3>
-                                    <div class="sc-btn-button">
-                                        <a href="blog-details.html" class="sc-button btn-1"><span>Discover More</span></a>
+                                    <div class="swiper-slide">
+                                        <div class="practice-box blog-box hover-img">
+                                            <div class="box-img relative">
+                                                <div class="media">
+                                                     <img class="img-item" src="assets/images/box-item/practice-3.jpg" alt="">
+                                                     <a href="#" class="icon-practice absolute" ><img src="assets/images/icon/icon-practice.png" alt=""></a>
+                                                </div>                         
+                                            </div>
+                                            <div class="content flex-two">
+                                               <div class="title-box flex-three">
+                                                    <h1>W</h1>
+                                                   <div class="inner">
+                                                        <p>Tenant Dispute</p>
+                                                        <h3><a href="blog-details.html">orker Injuries Law.</a></h3>
+                                                   </div>
+                                               </div>
+                                                <div class="sc-btn-button">
+                                                    <a href="blog-details.html" class="sc-button btn-1"><span><i class="fal fa-long-arrow-right link-icon "></i></span></a>
+                                                </div>
+                                            </div>                                                                 
+                                        </div>     
                                     </div>
-                                </div>                                                                 
-                            </div>                        
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="blog-box tf-img hover-img">
-                                <div class="media">
-                                    <img class="img-item" src="assets/images/blog/blog-4.jpg" alt="">
-                                </div>  
-                                <div class="content">
-                                    <div class="meta text-p">by <a href="#" class="user text-color-3">Themesflat  </a>  <span>Attorney</span> </div>
-                                    <h3><a href="blog-details.html">Domestic Violence in California – How a Lawyer Can Help.</a></h3>
-                                    <div class="sc-btn-button">
-                                        <a href="blog-details.html" class="sc-button btn-1"><span>Discover More</span></a>
-                                    </div>
-                                </div>                                                                 
-                            </div>                        
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="blog-box tf-img hover-img">
-                                <div class="media">
-                                    <img class="img-item" src="assets/images/blog/blog-5.jpg" alt="">
-                                </div>  
-                                <div class="content">
-                                    <div class="meta text-p">by <a href="#" class="user text-color-3">Themesflat </a>  <span>Attorney</span> </div>
-                                    <h3 class="fw-5"><a href="blog-details.html">Nulla facilisi. Aenean nisi sem, vestibulum vel lacus in.</a></h3>
-                                    <div class="sc-btn-button">
-                                        <a href="blog-details.html" class="sc-button btn-1"><span>Discover More</span></a>
-                                    </div>
-                                </div>                                                                 
-                            </div>                        
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="blog-box tf-img hover-img">
-                                <div class="media">
-                                    <img class="img-item" src="assets/images/blog/blog-6.jpg" alt="">
-                                </div>  
-                                <div class="content">
-                                    <div class="meta text-p">by <a href="#" class="user text-color-3">Themesflat </a>  <span>Attorney</span> </div>
-                                    <h3 class="fw-5"><a href="blog-details.html">Fusce tincidunt commodo sapien, quis porttitor ipsum fringilla et.</a></h3>
-                                    <div class="sc-btn-button">
-                                        <a href="blog-details.html" class="sc-button btn-1"><span>Discover More</span></a>
-                                    </div>
-                                </div>                                                                 
-                            </div>                        
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="themesflat-pagination clearfix">
-                                <ul>
-                                    <li><a href="#" class="page-numbers style">Prev</a></li>
-                                    <li><a href="#" class="page-numbers">1</a></li>
-                                    <li><a href="#" class="page-numbers current">2</a></li>
-                                    <li><a href="#" class="page-numbers">3</a></li>
-                                    <li><a href="#" class="page-numbers style current">Next</a></li>
-                                </ul>
-                            </div> 
+                                    <div class="swiper-slide">
+                                        <div class="practice-box blog-box hover-img">
+                                            <div class="box-img relative">
+                                                <div class="media">
+                                                     <img class="img-item" src="assets/images/box-item/practice-1.jpg" alt="">
+                                                     <a href="#" class="icon-practice absolute" ><img src="assets/images/icon/icon-practice.png" alt=""></a>
+                                                </div>                         
+                                            </div>
+                                            <div class="content flex-two">
+                                               <div class="title-box flex-three">
+                                                    <h1>C</h1>
+                                                   <div class="inner">
+                                                        <p>Real Specialist</p>
+                                                        <h3><a href="blog-details.html">ar <span>Accidents Law.</span></a></h3>
+                                                   </div>
+                                               </div>
+                                                <div class="sc-btn-button">
+                                                    <a href="blog-details.html" class="sc-button btn-1"><span><i class="fal fa-long-arrow-right link-icon "></i></span></a>
+                                                </div>
+                                            </div>                                                                 
+                                        </div>
+                                    </div> -->
+                                </div>
+                                <div class="swiper-pagination-bullet center"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -375,6 +440,7 @@
     <script src="assets/js/jquery.easing.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/swiper.js"></script>
 
     <script src="assets/js/plugin.js"></script>
     <script src="assets/js/shortcodes.js"></script>

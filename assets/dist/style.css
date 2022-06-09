@@ -569,8 +569,7 @@ input[type=color] {
   border-radius: 4px;
   padding: 6px 15px 7px 19px;
   width: 100%;
-  background-color: var(--primary-color10);
-  color: var(--primary-color4);
+  color: var(--primary-color2);
 }
 
 /* Input focus */
@@ -615,7 +614,7 @@ input[type=color]::placeholder {
   font-weight: 400;
   line-height: 24px;
   font-family: "Open Sans";
-  color: #706C83;
+  color: rgba(119, 119, 119, 0.8);
 }
 
 /* Button */
@@ -702,7 +701,6 @@ h2 {
 
 h3 {
   font-size: 24px;
-  font-weight: 500;
   line-height: 29px;
 }
 
@@ -802,13 +800,17 @@ label.error {
   text-transform: capitalize;
 }
 
+.text-u {
+  text-transform: uppercase;
+}
+
 .align {
   align-items: center;
 }
 
 .show-boder {
-  padding-bottom: 10px !important;
-  margin-bottom: -10px !important;
+  padding-bottom: 50px !important;
+  margin-bottom: -50px !important;
 }
 
 .show-slider4 {
@@ -817,8 +819,8 @@ label.error {
 }
 
 .show-shadow {
-  margin: -15px !important;
-  padding: 15px !important;
+  margin: -50px !important;
+  padding: 50px !important;
 }
 
 #wrapper {
@@ -877,6 +879,14 @@ label.error {
 
 .mb-38 {
   margin-bottom: 38px;
+}
+
+.pl-2 {
+  padding-left: 2px !important;
+}
+
+.pl-3 {
+  padding-left: 3px !important;
 }
 
 /* link style

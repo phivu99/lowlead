@@ -1856,3 +1856,18 @@
   transform: scale(0.8);
 }
 }
+
+@keyframes link-icon {
+	0% {
+		transform: translateX(0); opacity: 1;
+	}
+	49% { 
+		transform: translateX(20px); opacity: 0;
+	}
+	50% { 
+		transform: translateX(-20px); opacity: 0;
+	}
+	100% {
+		transform: translateX(0); opacity: 1;
+	}
+}
