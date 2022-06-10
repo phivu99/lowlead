@@ -809,8 +809,10 @@ label.error {
 }
 
 .show-boder {
-  padding-bottom: 50px !important;
-  margin-bottom: -50px !important;
+  padding-top: 30px !important;
+  margin-top: -30px !important;
+  padding-bottom: 30px !important;
+  margin-bottom: -30px !important;
 }
 
 .show-slider4 {
@@ -1042,6 +1044,7 @@ a:hover, a:focus {
   --primary-color6: #23262912;
   --primary-color7: #FFFFFFB2;
   --primary-color8: #F6F6F6;
+  --primary-color9: #B1423312;
 }
 
 /* Header
@@ -2321,6 +2324,50 @@ header {
 .flat-img img {
   -webkit-transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
   transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.hover-img .img-style {
+  overflow: hidden;
+}
+.hover-img .img-style img {
+  width: 100%;
+  object-fit: cover;
+  -webkit-transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
+  transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
+}
+.hover-img:hover img {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1);
+  transform: scale3d(1.1, 1.1, 1.1);
+  -webkit-transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
+  transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.box-hv .hover-style {
+  position: relative;
+}
+.box-hv .hover-style::before {
+  content: "";
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  background: rgba(177, 66, 51, 0.5);
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: 1;
+  transform: scale(0, 0);
+  transform-origin: bottom;
+  transition: transform 1000ms ease;
+}
+.box-hv:hover .hover-style::before {
+  transform: scale(1, 1);
+  transform-origin: top;
 }
 
 /*# sourceMappingURL=style.css.map */

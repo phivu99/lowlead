@@ -822,8 +822,10 @@ label.error {
 }
 
 .show-boder {
-    padding-bottom: 50px !important;
-    margin-bottom: -50px !important;
+    padding-top: 30px !important;
+    margin-top : -30px !important;
+    padding-bottom: 30px !important;
+    margin-bottom: -30px !important;
 }
 
 .show-slider4 {
@@ -1024,6 +1026,7 @@ a {
     --primary-color6: #23262912;
     --primary-color7: #FFFFFFB2;
     --primary-color8: #F6F6F6;
+    --primary-color9: #B1423312;
 
 }
 
@@ -2441,6 +2444,49 @@ header {
     -webkit-transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
     transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
 }
+
+.hover-img {
+    .img-style {
+        overflow     : hidden;
+        img {
+            width             : 100%;
+            object-fit        : cover;
+            -webkit-transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
+            transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
+        }
+    }
+    &:hover {
+        img {
+            -webkit-transform: scale3d(1.1, 1.1, 1.1);
+            transform: scale3d(1.1, 1.1, 1.1);
+            -webkit-transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
+            transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);        
+        }
+    }
+} 
+.box-hv {
+    .hover-style {
+        position: relative;
+        &::before {
+            content: '';
+            @include absolute;
+            background: rgba(177, 66, 51, 0.5);
+            width: 100%;
+            height: 100%;
+            @include transition3;
+            z-index: 1;
+            transform: scale(0, 0);
+            transform-origin: bottom;
+            transition: transform 1000ms ease;
+        }
+    }  
+    &:hover .hover-style::before {
+        transform: scale(1, 1);
+        transform-origin: top;
+    }  
+}
+
+
 
 // .flat-img a img {
 //     -webkit-transform: scale(1.05);
