@@ -33,6 +33,9 @@
     .mobile-button {
       display: block !important;
     }
+
+    .swiper-button-prev,
+    .swiper-button-next,
     .icon-top,
     .flat-button-top {
       display: none;
@@ -40,6 +43,13 @@
 
     .blog-details .post {
       padding: 0px;
+    }
+
+    .flat-blog.home {
+      padding-bottom: 70px;
+    }
+    .flat-brand {
+      padding-bottom: 100px;
     }
     
     .overlay {
@@ -51,8 +61,17 @@
     .tf-section {
       padding: 100px 0;
     }
+
     .heading-section {
       margin-bottom: 105px;
+    }
+
+    .flat-icon-practice {
+      padding-bottom: 70px;
+    }
+
+    .slider .slider-item {
+      padding: 160px 0 170px;
     }
 
     .blog-box {
@@ -71,6 +90,7 @@
       }
     }
 
+    .widget-subcribe.subcribe.home,
     .widget-subcribe.subcribe {
       margin: 0;
     }
@@ -94,6 +114,51 @@
         padding: 48px 50px 48px 49px;
       }
     }
+
+    .slider .img-slider img {
+      object-fit: cover;
+    }
+
+    .flat-about {
+      padding-bottom: 90px;
+      .about-box {
+        padding: 0;
+        h4 {
+          padding-bottom: 25px;
+          margin-bottom: 30px;
+        }
+        p {
+          padding: 0;
+          margin-bottom: 30px;
+        }
+      }
+      .image-wrapper .image-1 {
+        width: 30%;
+      }
+      .image-wrapper .image-2 {
+        width: 69%;
+      }
+    }
+
+    .flat-about .mark-a {
+      display: none;
+    }
+    .flat-testimonials {
+      padding-top: 85px;
+    }
+    .flat-testimonials .testimonial-post .texts {
+      padding: 0;
+    }
+    .flat-testimonials .testimonial-post h1 {
+      font-size: 130px;
+    }
+
+    .flat-video {
+      padding: 90px 0 200px;
+      h1 {
+        margin-bottom: 40px;
+      }
+    }
     
   }
   
@@ -104,6 +169,10 @@
     .tf-section2,
     .tf-section {
       padding: 80px 0;
+    }
+
+    .flat-practice {
+      padding-bottom: 70px;
     }
 
     .themesflat-pagination {
@@ -140,6 +209,10 @@
         }
       }
     }
+
+    .swiper-pagination {
+      display: none;
+    } 
     
     .page-title-heading .heading {
       font-size: 45px;
@@ -267,6 +340,65 @@
       margin-top: 60px;
     }
 
+    .slider .slider-item {
+      padding: 100px 0;
+    }
+
+    .flat-about {
+      padding-bottom: 70px;
+      .image-wrapper {
+        margin-bottom: 20px;
+        .image-1 {
+          width: 29.7%;
+        }
+        .image-2 {
+          width: 68.1%;
+        }
+      }
+    }
+
+    .flat-icon-practice {
+      padding-bottom: 50px;
+    }
+    .flat-icon-practice .wrapper-icon .box-icon {
+      width: 29%;
+    }
+    .flat-icon-practice .wrapper-icon .content {
+      width: 71%;
+    }
+    .flat-icon-practice .wrapper-icon .content i {
+      margin-left: 6px;
+    }
+    .flat-testimonials {
+      padding-top: 75px;
+    }
+    .flat-testimonials .testimonial-post h1 {
+      font-size: 58px;
+    }
+    .flat-video {
+      padding-bottom: 185px;
+      h1 {
+        font-size: 56px;
+        line-height: 70px;
+      }
+    }
+    .flat-blog.home {
+      padding-bottom: 50px;
+    }
+    .flat-brand {
+      padding-bottom: 80px;
+      .brand-slider {
+        padding-top: 50px;
+      }
+    }
+
+    .widget.style-4.home {
+      padding: 30px 15px 30px;
+      margin-top: 30px;
+      margin-bottom: 35px;
+    }
+
+
   }
 
   @media (max-width: 767px) and (min-width: 378px) {
@@ -300,10 +432,13 @@
       margin: 3px 10px 20px 0px;
     }
   
+  
   }
 
   @media only screen and (max-width: 310px) {
-   
+    .flat-testimonials .testimonial-post h1 {
+      font-size: 50px;
+    }
     
   }
   

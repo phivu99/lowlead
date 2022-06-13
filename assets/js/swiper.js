@@ -13,6 +13,10 @@ var swiper =  new Swiper(".mainslider", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
 });
 
 var swiper =  new Swiper(".carousel", {
@@ -48,12 +52,11 @@ var swiper =  new Swiper(".carousel", {
     },
 });
 
-
 var swiper =  new Swiper(".carousel-1", {
-    autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-        },
+    // autoplay: {
+    //     delay: 5000,
+    //     disableOnInteraction: false,
+    //     },
     slidesPerView: 1,
     spaceBetween: 30,
     loop: false,
