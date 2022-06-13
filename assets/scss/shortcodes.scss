@@ -926,6 +926,120 @@
     }
 }
 
+.flat-testimonials {
+    padding-top: 98px;
+    .testimonial-post {    
+        padding-bottom: 54px;
+        border-bottom: 1px solid #23262912;
+        h1 {
+            font-weight: 400;
+            font-size: 236px;
+            color: var(--primary-color9);
+            margin-bottom: 8px;
+        }
+        .texts {
+            font-size: 32px;
+            line-height: 52px;
+            color: var(--primary-color4);
+            padding: 0 100px;
+            margin-bottom: 33px;
+        }
+        .reviews {
+            justify-content: center;
+            margin-bottom: 12px;
+            .star {
+                    margin-right: 30px;
+                    margin-left: 3px;
+                i {
+                    font-size: 11px;
+                    margin-right: -0.5px;
+                    color: #FCC65D;
+                }
+            }
+        }
+        h3 {
+            font-family: 'Lora';
+        }
+    }
+}
 
+.flat-case {
+    .case-box {
+        .media {
+            margin-bottom: 10px;
+        }
+        .content {
+            background-color: var(--primary-color9);
+            padding: 21px 29px 23px;
+            @include transition3;
+            p {
+                margin-bottom: 4px;
+                color: var(--primary-color3);
+                @include transition3;
+            }
+            .inner {
+                @include transition5;
+            }
+        }
+        &:hover {
+            .content {
+                background-color: var(--primary-color3);
+                a {
+                    color: var(--primary-color);      
+                }
+                p {
+                    color: var(--primary-color);
+                }
+                .inner {
+                    -webkit-transform: translateY(-10px);
+                    transform        : translateY(-10px);  
+                }
+            }
+        }
+    }
+}
+
+.flat-video {
+    .overlay {
+        background: linear-gradient(82.76deg, rgba(35, 38, 41, 0.9) 49.67%, rgba(39, 43, 46, 0) 92.03%);
+    }
+    padding-top: 159px;
+    padding-bottom: 282px;
+    background-image: url(../images/backgroup-secsion/bg-video.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    h1 {
+        font-size: 82px;
+        line-height: 99px;
+        margin-bottom: 61px;
+    }
+    .post-video {
+        a {
+            position: absolute;
+            top: 130.5%;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            path {
+                @include transition3; 
+            }
+            &:hover {
+                background-color: var(--primary-color);
+                path {
+                    fill: var(--primary-color3);
+                }
+            }
+        }
+    }
+}
+
+.flat-brand {
+    padding: 0px 0 120px;
+    .brand-slider {
+        border-top: 1px solid #16222F12;
+        padding-top: 50px;
+    }
+}
+  
   
 

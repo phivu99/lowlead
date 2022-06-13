@@ -3294,4 +3294,126 @@ header {
   color: var(--primary-color);
 }
 
+.flat-testimonials {
+  padding-top: 98px;
+}
+.flat-testimonials .testimonial-post {
+  padding-bottom: 54px;
+  border-bottom: 1px solid rgba(35, 38, 41, 0.0705882353);
+}
+.flat-testimonials .testimonial-post h1 {
+  font-weight: 400;
+  font-size: 236px;
+  color: var(--primary-color9);
+  margin-bottom: 8px;
+}
+.flat-testimonials .testimonial-post .texts {
+  font-size: 32px;
+  line-height: 52px;
+  color: var(--primary-color4);
+  padding: 0 100px;
+  margin-bottom: 33px;
+}
+.flat-testimonials .testimonial-post .reviews {
+  justify-content: center;
+  margin-bottom: 12px;
+}
+.flat-testimonials .testimonial-post .reviews .star {
+  margin-right: 30px;
+  margin-left: 3px;
+}
+.flat-testimonials .testimonial-post .reviews .star i {
+  font-size: 11px;
+  margin-right: -0.5px;
+  color: #FCC65D;
+}
+.flat-testimonials .testimonial-post h3 {
+  font-family: "Lora";
+}
+
+.flat-case .case-box .media {
+  margin-bottom: 10px;
+}
+.flat-case .case-box .content {
+  background-color: var(--primary-color9);
+  padding: 21px 29px 23px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.flat-case .case-box .content p {
+  margin-bottom: 4px;
+  color: var(--primary-color3);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.flat-case .case-box .content .inner {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.flat-case .case-box:hover .content {
+  background-color: var(--primary-color3);
+}
+.flat-case .case-box:hover .content a {
+  color: var(--primary-color);
+}
+.flat-case .case-box:hover .content p {
+  color: var(--primary-color);
+}
+.flat-case .case-box:hover .content .inner {
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+.flat-video {
+  padding-top: 159px;
+  padding-bottom: 282px;
+  background-image: url(../images/backgroup-secsion/bg-video.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.flat-video .overlay {
+  background: linear-gradient(82.76deg, rgba(35, 38, 41, 0.9) 49.67%, rgba(39, 43, 46, 0) 92.03%);
+}
+.flat-video h1 {
+  font-size: 82px;
+  line-height: 99px;
+  margin-bottom: 61px;
+}
+.flat-video .post-video a {
+  position: absolute;
+  top: 130.5%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.flat-video .post-video a path {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.flat-video .post-video a:hover {
+  background-color: var(--primary-color);
+}
+.flat-video .post-video a:hover path {
+  fill: var(--primary-color3);
+}
+
+.flat-brand {
+  padding: 0px 0 120px;
+}
+.flat-brand .brand-slider {
+  border-top: 1px solid rgba(22, 34, 47, 0.0705882353);
+  padding-top: 50px;
+}
+
 /*# sourceMappingURL=app.css.map */
