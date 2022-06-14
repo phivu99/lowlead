@@ -1387,12 +1387,12 @@ header {
     ul {
         >li {
             >a {
-                color: var(--primary-color);
+                color: var(--primary-color2);
                 display: inline-block;
                 font-size: 16px;
                 line-height: 48px;
                 padding: 0 15px;
-                font-weight: 500;
+                font-weight: 700;
             }
             &.current-menu-item {
                 >a {
@@ -2373,6 +2373,50 @@ header {
     }
 }
 
+/* circle progress */
+
+.flat-about .progress-box1 {
+    margin-left: 23px;
+    margin-right: 78px;
+}
+
+.flat-about .progress-box2 {
+    margin-right: 78px;
+}
+
+.flat-about .progress-skill .couter .chart {
+    position: relative;
+    display: inline-block;
+    // transform: rotateY(90deg);
+}
+
+.flat-about .content h3 {
+    margin-left: 0px;
+    font-size: 18px;
+}
+
+.progress-skill {
+    margin-bottom: 11px;
+    text-align: center;
+}
+
+.progress-skill .couter .chart span.percent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Open Sans';
+    display: inline-block;
+    color: var(--primary-color10);
+}
+
+.progress-skill .couter .chart span.percent::after {
+    content: "%";
+}
+
+
 // swiper pagination slider
 .flat-themes .swiper-pagination,
 .flat-practice .swiper-pagination {
@@ -2441,6 +2485,8 @@ header {
     margin-bottom: 121px;
     h5 {
         margin-bottom: 12px;
+        text-transform: uppercase;
+        color: var(--primary-color4);
     }
     .title-section {
         position: relative;
@@ -2453,6 +2499,7 @@ header {
             height: 50px;
             transform: translateX(-50%);
             content: "";
+            text-transform: capitalize;
         }
     }
     &.style {
@@ -2463,24 +2510,19 @@ header {
 }
 
 .heading-section2 {
-    padding: 0 100px 0 0;
-    margin-bottom: 47px;
-
+    margin-bottom: 51px;
+    h5 {
+        margin-bottom: 12px;
+        text-transform: uppercase;
+        color: var(--primary-color4);
+    }
+    .title-section {
+        text-transform: capitalize;
+    }
     &.style {
-        margin-bottom: 50px;
-    }
-
-    h2 {
-        font-weight: 500;
-        margin-bottom: 16px;
-        margin-left: -1px;
-    }
-
-    p {
-        margin-left: 1px;
+        margin-bottom: 42px;
     }
 }
-
 
 // hover 
 .flat-blog .sc-card-article:hover,
@@ -2555,6 +2597,18 @@ header {
     &:hover .hover-style::before {
         transform: scale(1, 1);
         transform-origin: top;
+    }  
+
+    .hover-style.hv2 {
+        &::before {
+            transform-origin: unset;
+            background: #C2976580;
+
+        }
+    }
+    &:hover .hover-style.hv2::before {
+        transform: scale(1, 1);
+        transform-origin: center;
     }  
 }
 

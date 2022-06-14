@@ -50,33 +50,21 @@
             });
         },
 
-
-        // Retina Logos
-        retinaLogo: function () {
-            var retina = window.devicePixelRatio > 1 ? true : false;
-            var $logo = $('#site-logo img');
-            var $logo2 = $('#logo-footer img');
-            var $logo_retina = $logo.data('retina');
-
-            if (retina && $logo_retina) {
-                $logo.attr({
-                    src: $logo.data('retina'),
-                    width: $logo.data('width'),
-                    height: $logo.data('height')
-                });
-            }
-            if (retina && $logo_retina) {
-                $logo2.attr({
-                    src: $logo.data('retina'),
-                    width: $logo.data('width'),
-                    height: $logo.data('height')
-                });
-            }
-            },
     }; // end themesflatTheme
 
     // Start things up
     themesflatTheme.init();
+
+    var retinaLogos = function() {
+        var retina = window.devicePixelRatio > 1 ? true : false;
+          if(retina) {
+              $('#site-logo-inner').find('img').attr( {src:'assets/images/logo/logo@2x.png',width:'146.19',height:'65.83'} );
+              $('.site-logo.style2').find('img').attr( {src:'assets/images/logo/logo@2x.png',width:'176',height:'43'} );
+
+              $('.footer__logo').find('img').attr( {src:'assets/images/logo/logo2@2x.png',width:'141',height:'38'} );
+              $('.footer__logo.style2').find('img').attr( {src:'assets/images/logo/logo3@2x.png',width:'141',height:'38'} );
+          }   
+        };
 
     var ajaxContactForm = function () {
         $('#contactform,#commentform').each(function () {
@@ -359,6 +347,9 @@
 
     // Dom Ready
     $(function () {
+        $( window ).on('load resize',function() {
+            retinaLogos();
+        });
         headerFixed();
         mobileNav();
         ajaxSubscribe.eventLoad();
