@@ -80,6 +80,13 @@
     }
 }
 
+.sc-button.btn-9 {
+    background-color: var(--primary-color2);
+    &::after {
+        background-color: var(--primary-color10);
+    }
+}
+
 .sc-button.fl-button:hover{
     border: 1px solid var(--primary-color3);
     background-color: var(--primary-color3);
@@ -403,6 +410,10 @@
 
 .flat-blog.home {
     padding-bottom: 90px;
+}
+
+.flat-blog.home2 {
+    background: #C2976512;
 }
 
 /* Blog Page details
@@ -993,6 +1004,9 @@
 }
 
 .flat-icon-practice2 {
+    .heading-section {
+        margin-right: 155px;
+    }
     .wrapper-icon {
         border: 1px solid var(--primary-color6);
         padding: 28px 20px 39px 29px;
@@ -1113,6 +1127,40 @@
             }
         }
     }
+    &.home2 {
+        background-image: url(../images/backgroup-secsion/bg-case.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        .overlay {
+            background: #232629CC;
+        }
+        // .swiper-container {
+        //     overflow: visible; 
+        // }
+        .case-box {
+            .content {
+                background-color: var(--primary-color2);
+                h3 a {
+                    color: var(--primary-color);
+                }
+                p {
+                    color: var(--primary-color10);
+                }
+            }
+            &:hover {
+                .content {
+                    background-color: var(--primary-color10);
+                    a {
+                        color: var(--primary-color);      
+                    }
+                    p {
+                        color: var(--primary-color);
+                    }
+                }
+            }
+        }
+        
+    }
 }
 
 .flat-video {
@@ -1172,6 +1220,9 @@
         border-top: 1px solid #16222F12;
         padding-top: 60px;
     }
+    &.home2 {
+        background: #C2976512;
+    }
 }
   
 // best attorneys team
@@ -1204,7 +1255,7 @@
         .box-img {
             a {
                 position: absolute;
-                top: 80%;
+                top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
                 background-color: var(--primary-color);
@@ -1270,6 +1321,7 @@
 }
 
 .flat-contact-faq {
+    padding-bottom: 120px;
     .flat-accordion {
         .flat-toggle {
             border: 1px solid #F0F0F0;
@@ -1308,8 +1360,158 @@
             }
             
         }
+    }
+}
+
+.flat-success {
+    padding-bottom: 95px;
+    .hover-c {
+        &:hover {
+            .mark-c {
+                z-index: -1;
+            }
+        }
+    }
+    .mark-c {
+        top: 0;
+        left: -11px;
+        font-size: 750px;
+        font-weight: 400;
+        line-height: 507px;
+        color: #C29765;
+        mix-blend-mode: multiply; 
+        @include transition3;
+    }
+    .wrap-image {
+        padding-right: 70px;
+        .box-img {
+            .image-1 {
+                padding-left: 50px;
+                margin-bottom: 30px;
+                position: relative;
+                @include transition3;
+                &:hover {
+                    filter: drop-shadow(2px 4px 6px #C29765);
+                }
+            }
+            .image-2:hover {
+                filter: drop-shadow(2px 4px 6px #C29765);
+                position: relative;
+            }
+        }
+        .image-3 {
+            margin-top: 65px;
+            z-index: -2;
+            @include transition3;
+            &:hover {
+                filter: drop-shadow(2px 4px 6px #C29765);
+            }
+        }
+    }
+    .wrap-success {
+        padding-top: 40px;
+        h5 {
+            margin-bottom: 16px;
+            margin-left: 1px;
+        }
+        h2 {
+            line-height: 58px;
+            padding-right: 110px;
+            margin-bottom: 16px;
+        }
+        p {
+            margin-bottom: 40px;
+        }
+        .wrap-ordinal {
+            flex-wrap: wrap;
+            .box-ordinal {
+                width: 270px;
+                height: 50px;
+                margin-bottom: 10px;
+                .number {
+                    background: #ac6c2414;
+                    color: var(--primary-color10);
+                    font-size: 24px;
+                    font-weight: 400;
+                    width: 19%;
+                    height: 50px;              
+                    justify-content: center;    
+                }
+                .content {
+                    background: #C2976512; 
+                    padding-left: 18px;
+                    width: 81%;  
+                    height: 50px;            
+                }
+            }
+        }
+    } 
+}
+
+.flat-counter {
+    padding-bottom: 120px;
+    .count-row {
+        border-bottom: solid 1px #16222F12;
+    }
+    .counter-box {
+        text-align    : center;
+        position      : relative;
+        padding-top   : 3px;
+        padding-bottom: 60px;
+        &::after{
+            content         : "";
+            width           : 100%;
+            height          : 1px;
+            position        : absolute;
+            right           : 0;
+            bottom          : 0;
+            background-color: var(--primary-color10);
+            transform       : scale(0, 1);
+            transform-origin: center center;
+            transition      : transform 500ms ease;
+        }
+        .number {
+            color        : var(--primary-color2);
+            font-size    : 72px;
+            font-weight  : 400;
+            margin-bottom: 23px;
+            padding-left : 3px;
+            &::before {
+                content     : '\f067';
+                font-family : 'Font Awesome 5 Pro';
+                font-size   : 32px;
+                margin-right: 2px;
+                font-weight: 100;
+            }
+        }
+        h4 {
+            color: var(--primary-color4);
+        }
         
     }
+}
+
+.flat-counter .counter-box:hover::after{
+    transform       : scale(1, 1);
+    transform-origin:center center;   
+}
+
+@property --v2 {
+    syntax: "<integer>";
+    initial-value: 5;
+    inherits: true;
+}
+
+.flat-counter .counter-box .number-style {
+  counter-reset: v2 var(--v2);
+}
+
+.flat-counter .counter-box .number-style::after {
+    content:  'K';
+}
+
+.flat-counter .counter-box .number-style.number-one::after {
+    content:  "." counter(v2) "K";
 }
 
 

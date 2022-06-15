@@ -19,6 +19,27 @@ var swiper =  new Swiper(".mainslider", {
     },
 });
 
+var swiper =  new Swiper(".mainslider2", {
+    autoplay: {
+    delay: 8000,
+    disableOnInteraction: false,
+    },
+    slidesPerView: 1,
+    speed: 500,
+    effect: "fade",
+    fadeEffect: {
+        crossFade: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});
+
 var swiper =  new Swiper(".carousel", {
     // autoplay: {
     //     delay: 5000,
@@ -165,11 +186,7 @@ var swiper =  new Swiper(".carousel-4", {
             spaceBetween: 30,
         },
         1024: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-        },
-        1300: {
-            slidesPerView: 4,
+            slidesPerView: 5,
             spaceBetween: 30,
         },
     },

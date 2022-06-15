@@ -986,7 +986,7 @@ a:hover, a:focus {
 
 .link-style-4 a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--primary-color2);
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -994,7 +994,27 @@ a:hover, a:focus {
   transition: all 0.3s ease;
 }
 .link-style-4 a:focus, .link-style-4 a:hover {
-  color: var(--primary-color3);
+  color: var(--primary-color);
+  text-decoration: none;
+  outline: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.link-style-5 a {
+  text-decoration: none;
+  color: var(--primary-color2);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.link-style-5 a:focus, .link-style-5 a:hover {
+  color: var(--primary-color10);
   text-decoration: none;
   outline: 0;
   -webkit-transition: all 0.3s ease;
@@ -1819,15 +1839,15 @@ header {
 }
 .widget-menu ul li a::after {
   content: "";
-  width: 0;
+  width: 100%;
   height: 1px;
   position: absolute;
   background: var(--primary-color3);
-  left: 50%;
+  right: 0;
   bottom: 0;
-  transform: translateX(-50%);
-  visibility: hidden;
-  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -1835,14 +1855,21 @@ header {
   transition: all 0.3s ease;
 }
 .widget-menu ul li a:hover::after {
-  width: 100%;
-  visibility: visible;
-  opacity: 1;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  transform: scaleX(1);
+  transform-origin: center;
+}
+
+.widget-menu.home2 ul li a::after {
+  background: var(--primary-color10);
+}
+
+.widget-menu.home2 ul li a:hover {
+  color: var(--primary-color10);
 }
 
 .widget.style-4 {
@@ -1931,6 +1958,9 @@ header {
 .widget .recent-news li .entry-button:hover {
   color: var(--primary-color3);
 }
+.widget .recent-news.home2 li a:hover {
+  color: var(--primary-color10);
+}
 
 /* widget-subcribe */
 .widget-subcribe.subcribe {
@@ -1986,7 +2016,15 @@ header {
   background: var(--primary-color);
   border: 1px solid var(--primary-color);
   color: var(--primary-color2);
-  transition: all 0.3s ease-in-out;
+}
+
+.widget-subcribe.home2 .form-subcribe button {
+  background: var(--primary-color10);
+  border: 1px solid var(--primary-color10);
+}
+.widget-subcribe.home2 .form-subcribe button:hover {
+  background: var(--primary-color);
+  border: 1px solid var(--primary-color);
 }
 
 /* widget social footer */
@@ -2351,16 +2389,20 @@ header {
   overflow: visible;
 }
 
-.slider.home2 .swiper-pagination-bullet {
+.home2.tf-2 .swiper-pagination-bullet {
   background: rgba(255, 255, 255, 0.4);
 }
-.slider.home2 .swiper-pagination-bullet::before {
+.home2.tf-2 .swiper-pagination-bullet::before {
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .flat-case .swiper-pagination {
   margin-top: 63px;
   margin-bottom: 5px;
+}
+
+.flat-case.home2 .swiper-pagination {
+  margin-top: 66px;
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -2370,10 +2412,10 @@ header {
   border: 1px solid var(--primary-color3);
 }
 
-.slider.home2 .swiper-pagination-bullet.swiper-pagination-bullet-active {
+.home2.tf-2 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: var(--primary-color10) !important;
 }
-.slider.home2 .swiper-pagination-bullet.swiper-pagination-bullet-active::before {
+.home2.tf-2 .swiper-pagination-bullet.swiper-pagination-bullet-active::before {
   border: 1px solid var(--primary-color10);
 }
 
@@ -2403,6 +2445,9 @@ header {
   margin-top: -3px;
   margin-bottom: 49px;
   padding: 0 30%;
+}
+.heading-section.home2 .title-section::before {
+  background-color: var(--primary-color10);
 }
 
 .heading-section2 {
@@ -2487,9 +2532,9 @@ header {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   z-index: 1;
-  transform: scale(0, 0);
-  transform-origin: bottom;
-  transition: transform 1000ms ease;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 500ms ease;
 }
 .box-hv:hover .hover-style::before {
   transform: scale(1, 1);
@@ -2498,10 +2543,18 @@ header {
 .box-hv .hover-style.hv2::before {
   transform-origin: unset;
   background: rgba(194, 151, 101, 0.5019607843);
+  transform: scale(1, 0);
 }
 .box-hv:hover .hover-style.hv2::before {
   transform: scale(1, 1);
   transform-origin: center;
+}
+.box-hv .hover-style.hv3::before {
+  background: rgba(194, 151, 101, 0.5019607843) !important;
+  transform: scale(1, 0);
+}
+.box-hv:hover .hover-style.hv3::before {
+  transform: scale(1, 1);
 }
 
 /*# sourceMappingURL=style.css.map */
