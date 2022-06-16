@@ -783,53 +783,54 @@
         margin-top: -73px;
         position: relative;
         z-index: 9;
-    }
-    .wrap-practice {
-        background-image: url(../images/backgroup-secsion/bg-practice.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        .practice-box  {
-            @include transition3;
-            width: calc(33.334% - 0px);
-            background: #232629E5;
-            padding: 37px 28px;
-            .content {
-                margin: 0;
-                padding: 0;
-                h1 {
-                    color: var(--primary-color10);
-                }
-            }
-            .sc-btn-button {
-                .sc-button {
-                    background: var(--primary-color2);
-                    i {
-                        color: var(--primary-color);                      
-                    }              
-                }
-            }
-            &:hover {
-                background: #C29765E5;
+        .wrap-practice {
+            background-image: url(../images/backgroup-secsion/bg-practice.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            .practice-box  {
+                @include transition3;
+                width: calc(33.334% - 0px);
+                background: #232629E5;
+                padding: 37px 28px;
                 .content {
-                    h3 a{
-                        color: var(--primary-color);
-                    }
-                    p,
+                    margin: 0;
+                    padding: 0;
                     h1 {
-                        color: var(--primary-color);
+                        color: var(--primary-color10);
                     }
                 }
                 .sc-btn-button {
                     .sc-button {
-                        background: var(--primary-color);
+                        background: var(--primary-color2);
                         i {
-                            color: var(--primary-color10);
+                            color: var(--primary-color);                      
+                        }              
+                    }
+                }
+                &:hover {
+                    background: #C29765E5;
+                    .content {
+                        h3 a{
+                            color: var(--primary-color);
+                        }
+                        p,
+                        h1 {
+                            color: var(--primary-color);
+                        }
+                    }
+                    .sc-btn-button {
+                        .sc-button {
+                            background: var(--primary-color);
+                            i {
+                                color: var(--primary-color10);
+                            }
                         }
                     }
                 }
             }
         }
     }
+    
 }
 
 

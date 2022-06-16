@@ -37,7 +37,8 @@
     background: linear-gradient(72.76deg, rgba(35, 38, 41, 0.9) 35.67%, rgba(39, 43, 46, 0) 100.03%);
   }
 
-  #footer,
+  .flat-about.home2,
+#footer,
 .tf-section2,
 .tf-section {
     padding: 100px 0;
@@ -141,9 +142,128 @@
   .flat-video h1 {
     margin-bottom: 40px;
   }
+
+  .flat-practice.home2 .wrap-practice {
+    display: unset;
+  }
+  .flat-practice.home2 .wrap-practice .practice-box {
+    width: calc(100% - 0px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.0705882353);
+    background: rgba(35, 38, 41, 0.898);
+    padding: 25px 28px;
+  }
+
+  .flat-about.home2 .image-wrapper img {
+    width: 100%;
+  }
+  .flat-about.home2 .about-box {
+    padding: 0;
+  }
+  .flat-about.home2 .about-box p {
+    margin-bottom: 45px;
+    padding-right: 0;
+  }
+  .flat-about.home2 .about-box h4 {
+    line-height: 26px;
+    margin-bottom: 14px;
+  }
+  .flat-about.home2 .about-box h2 {
+    margin-bottom: 26px;
+  }
+  .flat-about.home2 .content h3 {
+    text-align: center;
+  }
+  .flat-about.home2 .progress-box1 {
+    margin-right: 40px;
+    margin-left: 0;
+  }
+  .flat-about.home2 .progress-box2 {
+    margin-right: 40px;
+  }
+
+  .flat-icon-practice2 .heading-section {
+    margin-right: 0;
+  }
+
+  .flat-best-attorneys {
+    padding-bottom: 72px;
+  }
+  .flat-best-attorneys .heading-section {
+    margin-bottom: 50px;
+  }
+  .flat-best-attorneys .heading-section p {
+    margin-bottom: 30px;
+  }
+
+  .heading-section2 {
+    margin-bottom: 42px;
+  }
+
+  .flat-contact-faq {
+    background: #f6f6f6;
+  }
+
+  .flat-contact-faq .wrap-contact {
+    margin-bottom: 60px;
+    padding: 0;
+  }
+
+  #comments .comment-form .text-call {
+    margin-bottom: 40px;
+  }
+
+  .flat-contact-faq .wrap-faq {
+    padding: 0;
+  }
+
+  .flat-success .mark-c {
+    left: 0;
+    font-size: 400px;
+    line-height: 290px;
+  }
+
+  .flat-success .wrap-image {
+    padding: 0;
+  }
+  .flat-success .wrap-image .box-img {
+    margin-right: 15px;
+  }
+  .flat-success .wrap-image .box-img .image-1 {
+    padding-left: 40px;
+    margin-bottom: 15px;
+  }
+  .flat-success .wrap-image .image-3 {
+    width: 36%;
+    margin-left: 0px;
+    margin-top: 60px;
+  }
+
+  .flat-success {
+    padding-bottom: 80px;
+  }
+  .flat-success .wrap-success {
+    padding-top: 0;
+  }
+  .flat-success .wrap-success h2 {
+    padding: 0;
+  }
+
+  .flat-success .wrap-success .wrap-ordinal .box-ordinal {
+    width: 100%;
+  }
+
+  .flat-case.home2 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .flat-counter {
+    padding-bottom: 100px;
+  }
 }
 @media only screen and (max-width: 767px) {
-  #footer,
+  .flat-about.home2,
+#footer,
 .tf-section2,
 .tf-section {
     padding: 80px 0;
@@ -301,6 +421,10 @@
     margin-bottom: 40px;
   }
 
+  #comments .comment-form .button {
+    text-align: center;
+  }
+
   .side-bar .widget.style,
 .side-bar .widget {
     padding: 50px 15px;
@@ -381,10 +505,39 @@
     margin-top: 30px;
     margin-bottom: 35px;
   }
+
+  .flat-practice.home2 .wrap-practice .practice-box {
+    padding: 25px 15px;
+  }
+
+  .flat-about.home2 .progress-box2 {
+    margin-bottom: 25px;
+  }
+
+  .flat-about.home2 .progress-box1 {
+    margin-bottom: 25px;
+  }
+
+  .flat-icon-practice2 .wrapper-icon {
+    padding-top: 40px;
+  }
+  .flat-icon-practice2 .wrapper-icon .box-icon {
+    margin-bottom: 33px;
+  }
 }
 @media (max-width: 767px) and (min-width: 378px) {
   .widget .recent-news li .texts {
     margin-top: 12px;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .flat-about.home2 .progress-box2 {
+    margin-right: 0;
+  }
+
+  .flat-about.home2 .wrap-progress {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 @media only screen and (max-width: 360px) {
@@ -410,6 +563,13 @@
 @media only screen and (max-width: 310px) {
   .flat-testimonials .testimonial-post h1 {
     font-size: 50px;
+  }
+
+  .flat-about.home2 .progress-box3,
+.flat-about.home2 .progress-box2,
+.flat-about.home2 .progress-box1 {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 

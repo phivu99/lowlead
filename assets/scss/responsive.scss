@@ -56,6 +56,7 @@
       background: linear-gradient(72.76deg, rgba(35, 38, 41, 0.9) 35.67%, rgba(39, 43, 46, 0) 100.03%);
     }
     
+    .flat-about.home2,
     #footer,
     .tf-section2,
     .tf-section {
@@ -159,12 +160,122 @@
         margin-bottom: 40px;
       }
     }
-    
+
+    .flat-practice.home2 .wrap-practice {
+      display: unset;
+      .practice-box {
+        width: calc(100% - 0px);
+        border-bottom: 1px solid #FFFFFF12;
+        background: rgba(35, 38, 41, 0.898);
+        padding: 25px 28px;
+      }
+    }
+ 
+    .flat-about.home2 {
+      .image-wrapper img {
+        width: 100%;
+      }
+      .about-box {
+        padding: 0;
+        p {
+          margin-bottom: 45px;
+          padding-right: 0;
+        }
+        h4 {
+          line-height: 26px;
+          margin-bottom: 14px;
+        }
+        h2 {
+          margin-bottom: 26px;
+        }
+      }
+      .content h3 {
+        text-align: center;
+      }
+      .progress-box1 {
+        margin-right: 40px;
+        margin-left: 0;
+      }
+      .progress-box2 {
+        margin-right: 40px;
+      }
+    }
+
+    .flat-icon-practice2 .heading-section {
+      margin-right: 0;
+    }
+
+    .flat-best-attorneys {
+      padding-bottom: 72px;
+      .heading-section {
+        margin-bottom: 50px;
+        p {
+          margin-bottom: 30px;
+        }
+      }
+    }
+    .heading-section2 {
+      margin-bottom: 42px;
+    }
+    .flat-contact-faq {
+      background: #f6f6f6;
+    }
+    .flat-contact-faq .wrap-contact {
+      margin-bottom: 60px;
+      padding: 0;
+    }
+    #comments .comment-form .text-call {
+      margin-bottom: 40px;
+    }
+    .flat-contact-faq .wrap-faq {
+      padding: 0;
+    }
+
+    .flat-success .mark-c {
+      left: 0;
+      font-size: 400px;
+      line-height: 290px;
+    }
+    .flat-success .wrap-image {
+      padding: 0;
+      .box-img {
+        margin-right: 15px;
+        .image-1 {
+          padding-left: 40px;
+          margin-bottom: 15px;
+        }
+      }
+      .image-3 {
+        width: 36%;
+        margin-left: 0px;
+        margin-top:60px;
+      }
+    }
+    .flat-success {
+      padding-bottom: 80px;
+      .wrap-success {
+        padding-top: 0;
+        h2 {
+          padding: 0;
+        }
+      }
+    }
+    .flat-success .wrap-success .wrap-ordinal .box-ordinal {
+      width: 100%;
+    }
+    .flat-case.home2 {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .flat-counter {
+      padding-bottom: 100px;
+    }
   }
   
 
   @media only screen and (max-width: 767px) {
 
+    .flat-about.home2,
     #footer,
     .tf-section2,
     .tf-section {
@@ -325,6 +436,10 @@
     #comments .comment-form .text-call {
       margin-bottom: 40px;
     }
+
+    #comments .comment-form .button {
+      text-align: center;
+    }
   
     .side-bar .widget.style,
     .side-bar .widget {
@@ -398,6 +513,28 @@
       margin-bottom: 35px;
     }
 
+    .flat-practice.home2 .wrap-practice .practice-box {
+      padding: 25px 15px;
+    }
+    .flat-about.home2 .progress-box2 {
+      margin-bottom: 25px;
+      // margin-right: 0;
+    }
+    .flat-about.home2 .progress-box1 {
+      margin-bottom: 25px;
+    }
+
+    .flat-icon-practice2 .wrapper-icon {
+      padding-top: 40px;
+      .box-icon {
+        margin-bottom: 33px;
+      }
+    }
+    .flat-best-attorneys {
+      // .button-best {
+      //   text-align: center;
+      // }
+    }
 
   }
 
@@ -407,8 +544,14 @@
     }
   }
 
-  @media only screen and (max-width: 520px) {
-   
+  @media only screen and (max-width: 430px) {
+    .flat-about.home2 .progress-box2 {
+      margin-right: 0;
+    }
+    .flat-about.home2 .wrap-progress {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
 
   }
   
@@ -438,6 +581,12 @@
   @media only screen and (max-width: 310px) {
     .flat-testimonials .testimonial-post h1 {
       font-size: 50px;
+    }
+    .flat-about.home2 .progress-box3,
+    .flat-about.home2 .progress-box2,
+    .flat-about.home2 .progress-box1 {
+      margin-left: 20px;
+      margin-right: 20px;
     }
     
   }

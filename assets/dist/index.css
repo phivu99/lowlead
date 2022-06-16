@@ -3339,12 +3339,12 @@ header {
   position: relative;
   z-index: 9;
 }
-.flat-practice .wrap-practice {
+.flat-practice.home2 .wrap-practice {
   background-image: url(../images/backgroup-secsion/bg-practice.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-.flat-practice .wrap-practice .practice-box {
+.flat-practice.home2 .wrap-practice .practice-box {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -3354,33 +3354,33 @@ header {
   background: rgba(35, 38, 41, 0.8980392157);
   padding: 37px 28px;
 }
-.flat-practice .wrap-practice .practice-box .content {
+.flat-practice.home2 .wrap-practice .practice-box .content {
   margin: 0;
   padding: 0;
 }
-.flat-practice .wrap-practice .practice-box .content h1 {
+.flat-practice.home2 .wrap-practice .practice-box .content h1 {
   color: var(--primary-color10);
 }
-.flat-practice .wrap-practice .practice-box .sc-btn-button .sc-button {
+.flat-practice.home2 .wrap-practice .practice-box .sc-btn-button .sc-button {
   background: var(--primary-color2);
 }
-.flat-practice .wrap-practice .practice-box .sc-btn-button .sc-button i {
+.flat-practice.home2 .wrap-practice .practice-box .sc-btn-button .sc-button i {
   color: var(--primary-color);
 }
-.flat-practice .wrap-practice .practice-box:hover {
+.flat-practice.home2 .wrap-practice .practice-box:hover {
   background: rgba(194, 151, 101, 0.8980392157);
 }
-.flat-practice .wrap-practice .practice-box:hover .content h3 a {
+.flat-practice.home2 .wrap-practice .practice-box:hover .content h3 a {
   color: var(--primary-color);
 }
-.flat-practice .wrap-practice .practice-box:hover .content p,
-.flat-practice .wrap-practice .practice-box:hover .content h1 {
+.flat-practice.home2 .wrap-practice .practice-box:hover .content p,
+.flat-practice.home2 .wrap-practice .practice-box:hover .content h1 {
   color: var(--primary-color);
 }
-.flat-practice .wrap-practice .practice-box:hover .sc-btn-button .sc-button {
+.flat-practice.home2 .wrap-practice .practice-box:hover .sc-btn-button .sc-button {
   background: var(--primary-color);
 }
-.flat-practice .wrap-practice .practice-box:hover .sc-btn-button .sc-button i {
+.flat-practice.home2 .wrap-practice .practice-box:hover .sc-btn-button .sc-button i {
   color: var(--primary-color10);
 }
 
