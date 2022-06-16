@@ -1030,6 +1030,9 @@ a {
     color: var(--primary-color10) !important;
 }
 
+.text-color-9 {
+    color: #165153;
+}
 
 /* Root
 -------------------------------------------------------------- */
@@ -1044,13 +1047,10 @@ a {
     --primary-color6: #23262912;
     --primary-color7: #FFFFFFB2;
     --primary-color8: #F6F6F6;
-    --primary-color9: #B1423312;
+    --primary-color9: #165153;
     --primary-color10: #C29765;
-
 }
 
-/* Header
--------------------------------------------------------------- */
 /* Header
 -------------------------------------------------------------- */
 
@@ -1066,6 +1066,7 @@ header {
     &.style2 {
         position: absolute;
     }
+
 }
 
 .admin_active {
@@ -1137,6 +1138,50 @@ header {
             display: none;
         }
     }
+    &.home3 {
+        border-bottom: 1px solid #23262912;
+
+        .inner .icon-top {
+            margin-right: 36px;
+        }
+        .top-address {
+            line-height: unset;
+            margin-right: -1px;
+           
+            &::before {
+                content    : '\f3c5';
+                font-family: "Font Awesome 5 Pro";
+                color: var(--primary-color9);
+                font-weight: 700;
+                font-size: 12px;
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+.wrap-email {
+    .icon-email {
+        width: 50px;
+        height: 50px;
+        border: 1px solid #23262912;
+        line-height: 58px;
+        text-align: center;
+        border-radius: 50%;
+        svg {
+            fill:#165153;
+            font-size: 18px;
+          
+        }
+    }
+}
+
+.box-menu {
+    background-color: #165153;
+    padding: 50px;
+    position: relative;
+    /* z-index: 99999; */
+    margin-bottom: -38px;
 }
 
 #site-header-inner.home2 {
@@ -1147,6 +1192,9 @@ header {
 -------------------------------------------------------------- */
 #site-logo {
     height: 105px;
+    &.home3 {
+        height: 86px;
+    }
 }
 
 #site-logo-inner {
@@ -1441,11 +1489,10 @@ header {
             font-family: "FontAwesome";
             line-height: 48px;
             position: absolute;
-            right: 15px;
+            right: 0px;
             text-align: center;
             top: 0;
             width: 48px;
-
             &::before {
                 font-family: "Font Awesome 5 Pro";
                 content: "\f107";
@@ -1583,6 +1630,7 @@ header {
 }
 
 /* Mobile Menu Button */
+
 .mobile-button {
     display: none;
     position: absolute;
@@ -1590,7 +1638,7 @@ header {
     height: 26px;
     float: right;
     top: 50%;
-    right: 15px;
+    right: 0px;
     background-color: transparent;
     cursor: pointer;
     @include transition3;
@@ -1657,7 +1705,6 @@ header {
             transform: rotate3d(0, 0, 1, -45deg);
         }
     }
-
 }
 
 .tf-button-submit {
@@ -1667,13 +1714,14 @@ header {
     }
 }
 
-.is_dark {
-    .tf-button-submit {
-        &:hover {
-            color: #fff;
-        }
+.style2 .mobile-button {
+    &::before,
+    &::after,
+    span {
+        background-color: var(--primary-color);
     }
 }
+
 
 /* Header Fixed */
 
@@ -1908,7 +1956,7 @@ header {
                     width: 100%;
                     height: 1px;
                     position: absolute;
-                    background: var(--primary-color3);
+                    background: #B14233;
                     right: 0;
                     bottom: 0;
                     transform: scaleX(0);
@@ -2458,10 +2506,11 @@ header {
     bottom: 0 !important; 
 }
 
-.slider.home2 .swiper-pagination {
+.slider.home2 .swiper-pagination2 {
     position: absolute;
     bottom: 11.3%;
     right: 18.9%;
+    z-index: 9;
 }
 .slider.home2 .swiper-pagination-bullet,
 .flat-themes .swiper-pagination-bullet,
@@ -2487,6 +2536,7 @@ header {
 }
 
 .home2.tf-2 .swiper-pagination-bullet {
+  
     background: #FFFFFF66;
     &::before {
         border: 1px solid #FFFFFF33;

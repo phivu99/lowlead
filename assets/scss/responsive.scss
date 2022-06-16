@@ -75,6 +75,10 @@
       padding: 160px 0 170px;
     }
 
+    .slider.home2 .slider-item {
+      padding: 270px 0 250px;
+    }
+
     .blog-box {
       .content {
         margin-bottom: 40px;
@@ -144,14 +148,17 @@
     .flat-about .mark-a {
       display: none;
     }
+
     .flat-testimonials {
       padding-top: 85px;
-    }
-    .flat-testimonials .testimonial-post .texts {
-      padding: 0;
-    }
-    .flat-testimonials .testimonial-post h1 {
-      font-size: 130px;
+      .testimonial-post {
+        .texts {
+          padding: 0;
+        }
+        h1 {
+          font-size: 130px;
+        }
+      }
     }
 
     .flat-video {
@@ -166,7 +173,7 @@
       .practice-box {
         width: calc(100% - 0px);
         border-bottom: 1px solid #FFFFFF12;
-        background: rgba(35, 38, 41, 0.898);
+        background: rgba(35, 38, 41, 1);
         padding: 25px 28px;
       }
     }
@@ -459,6 +466,10 @@
       padding: 100px 0;
     }
 
+    .slider.home2 .slider-item {
+      padding: 210px 0 160px;
+    }
+
     .flat-about {
       padding-bottom: 70px;
       .image-wrapper {
@@ -513,13 +524,15 @@
       margin-bottom: 35px;
     }
 
+    .flat-practice.home2 {
+      margin-top: -50px;
+    }
+
     .flat-practice.home2 .wrap-practice .practice-box {
       padding: 25px 15px;
     }
-    .flat-about.home2 .progress-box2 {
-      margin-bottom: 25px;
-      // margin-right: 0;
-    }
+
+    .flat-about.home2 .progress-box2,
     .flat-about.home2 .progress-box1 {
       margin-bottom: 25px;
     }
@@ -530,10 +543,47 @@
         margin-bottom: 33px;
       }
     }
+
     .flat-best-attorneys {
-      // .button-best {
-      //   text-align: center;
-      // }
+      padding-bottom: 50px;
+      .wrapper-best .content {
+        padding: 22px 0 25px;
+      }
+    }
+
+    .flat-contact-faq .flat-accordion .flat-toggle .toggle-title {
+      padding: 14px 27px 14px 20px;
+      line-height: 22px;
+    }
+
+    .flat-contact-faq .flat-accordion .flat-toggle .toggle-content {
+      padding: 20px 15px 18px 20px;
+    }
+
+    .flat-success {
+      padding-bottom: 70px;
+      .wrap-image {
+        margin-bottom: 30px;
+        .image-3 {
+          margin-top: auto;
+        }
+      }
+      .wrap-success h5 {
+        margin-bottom: 10px;
+      }
+      .mark-c {
+        display: none;
+      }
+    }
+
+    .flat-counter {
+      padding-bottom: 80px;
+      .counter-box {
+        padding-bottom: 30px;
+        &.style-mobi {
+          padding-bottom: 50px;
+        }
+      }
     }
 
   }

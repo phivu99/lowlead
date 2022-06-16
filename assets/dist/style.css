@@ -1056,6 +1056,10 @@ a:hover, a:focus {
   color: var(--primary-color10) !important;
 }
 
+.text-color-9 {
+  color: #165153;
+}
+
 /* Root
 -------------------------------------------------------------- */
 :root {
@@ -1068,12 +1072,10 @@ a:hover, a:focus {
   --primary-color6: #23262912;
   --primary-color7: #FFFFFFB2;
   --primary-color8: #F6F6F6;
-  --primary-color9: #B1423312;
+  --primary-color9: #165153;
   --primary-color10: #C29765;
 }
 
-/* Header
--------------------------------------------------------------- */
 /* Header
 -------------------------------------------------------------- */
 header {
@@ -1151,6 +1153,45 @@ header {
 #top-bar.home2::before {
   display: none;
 }
+#top-bar.home3 {
+  border-bottom: 1px solid rgba(35, 38, 41, 0.0705882353);
+}
+#top-bar.home3 .inner .icon-top {
+  margin-right: 36px;
+}
+#top-bar.home3 .top-address {
+  line-height: unset;
+  margin-right: -1px;
+}
+#top-bar.home3 .top-address::before {
+  content: "\f3c5";
+  font-family: "Font Awesome 5 Pro";
+  color: var(--primary-color9);
+  font-weight: 700;
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.wrap-email .icon-email {
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgba(35, 38, 41, 0.0705882353);
+  line-height: 58px;
+  text-align: center;
+  border-radius: 50%;
+}
+.wrap-email .icon-email svg {
+  fill: #165153;
+  font-size: 18px;
+}
+
+.box-menu {
+  background-color: #165153;
+  padding: 50px;
+  position: relative;
+  /* z-index: 99999; */
+  margin-bottom: -38px;
+}
 
 #site-header-inner.home2 {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1019607843);
@@ -1160,6 +1201,9 @@ header {
 -------------------------------------------------------------- */
 #site-logo {
   height: 105px;
+}
+#site-logo.home3 {
+  height: 86px;
 }
 
 #site-logo-inner {
@@ -1400,7 +1444,7 @@ header {
   font-family: "FontAwesome";
   line-height: 48px;
   position: absolute;
-  right: 15px;
+  right: 0px;
   text-align: center;
   top: 0;
   width: 48px;
@@ -1543,7 +1587,7 @@ header {
   height: 26px;
   float: right;
   top: 50%;
-  right: 15px;
+  right: 0px;
   background-color: transparent;
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
@@ -1613,8 +1657,9 @@ header {
   color: #fff;
 }
 
-.is_dark .tf-button-submit:hover {
-  color: #fff;
+.style2 .mobile-button::before, .style2 .mobile-button::after,
+.style2 .mobile-button span {
+  background-color: var(--primary-color);
 }
 
 /* Header Fixed */
@@ -1842,7 +1887,7 @@ header {
   width: 100%;
   height: 1px;
   position: absolute;
-  background: var(--primary-color3);
+  background: #B14233;
   right: 0;
   bottom: 0;
   transform: scaleX(0);
@@ -2354,10 +2399,11 @@ header {
   bottom: 0 !important;
 }
 
-.slider.home2 .swiper-pagination {
+.slider.home2 .swiper-pagination2 {
   position: absolute;
   bottom: 11.3%;
   right: 18.9%;
+  z-index: 9;
 }
 
 .slider.home2 .swiper-pagination-bullet,

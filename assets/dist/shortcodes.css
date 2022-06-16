@@ -1077,7 +1077,7 @@
 .flat-testimonials .testimonial-post h1 {
   font-weight: 400;
   font-size: 236px;
-  color: var(--primary-color9);
+  color: rgba(177, 66, 51, 0.0705882353);
   margin-bottom: 8px;
 }
 .flat-testimonials .testimonial-post .texts {
@@ -1111,7 +1111,7 @@
   margin-bottom: 10px;
 }
 .flat-case .case-box .content {
-  background-color: var(--primary-color9);
+  background-color: rgba(177, 66, 51, 0.0705882353);
   padding: 21px 29px 23px;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -1366,7 +1366,7 @@
 }
 
 .flat-success {
-  padding-bottom: 95px;
+  padding-bottom: 98px;
 }
 .flat-success .hover-c:hover .mark-c {
   z-index: -1;
@@ -1465,7 +1465,6 @@
 .flat-counter .counter-box {
   text-align: center;
   position: relative;
-  padding-top: 3px;
   padding-bottom: 60px;
 }
 .flat-counter .counter-box::after {

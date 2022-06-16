@@ -59,9 +59,9 @@
         var retina = window.devicePixelRatio > 1 ? true : false;
           if(retina) {
               $('#site-logo-inner').find('img').attr( {src:'assets/images/logo/logo@2x.png',width:'146.19',height:'65.83'} );
-              $('.site-logo.style2').find('img').attr( {src:'assets/images/logo/logo@2x.png',width:'176',height:'43'} );
+              $('#site-logo-inner.style2').find('img').attr( {src:'assets/images/logo/logo-home2@2x.png',width:'146.19',height:'65.83'} );
 
-              $('.footer__logo').find('img').attr( {src:'assets/images/logo/logo2@2x.png',width:'141',height:'38'} );
+              $('#logo-footer.style2').find('img').attr( {src:'assets/images/logo/logo-home2@2x.png',width:'146.19',height:'65.83'} );
               $('.footer__logo.style2').find('img').attr( {src:'assets/images/logo/logo3@2x.png',width:'141',height:'38'} );
           }   
         };

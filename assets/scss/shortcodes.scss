@@ -1062,7 +1062,7 @@
         h1 {
             font-weight: 400;
             font-size: 236px;
-            color: var(--primary-color9);
+            color: #B1423312;
             margin-bottom: 8px;
         }
         .texts {
@@ -1100,7 +1100,7 @@
             margin-bottom: 10px;
         }
         .content {
-            background-color: var(--primary-color9);
+            background-color: #B1423312;
             padding: 21px 29px 23px;
             @include transition3;
             p {
@@ -1289,7 +1289,6 @@
         }
         &:hover a {
             top: 50%;
-            // transition-delay: 0.6s;
             @include transition6; 
             opacity: 1; 
         }
@@ -1365,7 +1364,7 @@
 }
 
 .flat-success {
-    padding-bottom: 95px;
+    padding-bottom: 98px;
     .hover-c {
         &:hover {
             .mark-c {
@@ -1457,7 +1456,6 @@
     .counter-box {
         text-align    : center;
         position      : relative;
-        padding-top   : 3px;
         padding-bottom: 60px;
         &::after{
             content         : "";
