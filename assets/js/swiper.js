@@ -14,27 +14,6 @@ var swiper =  new Swiper(".mainslider", {
         prevEl: ".swiper-button-prev",
     },
     pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-});
-
-var swiper =  new Swiper(".mainslider2", {
-    autoplay: {
-    delay: 8000,
-    disableOnInteraction: false,
-    },
-    slidesPerView: 1,
-    speed: 500,
-    effect: "fade",
-    fadeEffect: {
-        crossFade: true,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    pagination: {
         el: ".swiper-pagination2",
         clickable: true,
     },
@@ -193,10 +172,10 @@ var swiper =  new Swiper(".carousel-4", {
 });
 
 var swiper =  new Swiper(".carousel-5", {
-    autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-        },
+    // autoplay: {
+    //     delay: 5000,
+    //     disableOnInteraction: false,
+    //     },
     loop:false,
     slidesPerView: 1,
     spaceBetween: 30,
@@ -215,12 +194,8 @@ var swiper =  new Swiper(".carousel-5", {
             spaceBetween: 30,
         },
         1024: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-        },
-        1300: {
-            slidesPerView: 4,
-            spaceBetween: 30,
+            slidesPerView: 5,
+            spaceBetween: 10,
         },
     },
 });
