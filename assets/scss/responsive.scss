@@ -33,7 +33,7 @@
     .mobile-button {
       display: block !important;
     }
-
+    .swiper-pagination2,
     .swiper-button-prev,
     .swiper-button-next,
     .icon-top,
@@ -56,6 +56,7 @@
       background: linear-gradient(72.76deg, rgba(35, 38, 41, 0.9) 35.67%, rgba(39, 43, 46, 0) 100.03%);
     }
     
+    .flat-testimonials.home3,
     .flat-about.home2,
     #footer,
     .tf-section2,
@@ -77,6 +78,10 @@
 
     .slider.home2 .slider-item {
       padding: 270px 0 250px;
+    }
+
+    .slider.home3 .slider-item {
+      padding: 230px 0 130px;
     }
 
     .blog-box {
@@ -144,9 +149,27 @@
         width: 69%;
       }
     }
-
+    .col-mobi,
     .flat-about .mark-a {
       display: none;
+    }
+
+    .flat-button-top.home3 {
+      display: unset;
+      right: unset;
+      left: 0;
+    }
+
+    .mobile-button.home3 {
+      right: 15px;
+    }
+    
+    .style3 #main-nav-mobi {
+      top: 126%;
+    }
+
+    .box-phone {
+      padding-left: 0;
     }
 
     .flat-testimonials {
@@ -213,14 +236,25 @@
     }
 
     .flat-best-attorneys {
-      padding-bottom: 72px;
+      padding-bottom: 72px !important;
       .heading-section {
-        margin-bottom: 50px;
+        margin-bottom: 50px !important;
         p {
-          margin-bottom: 30px;
+          margin-bottom: 30px !important;
         }
       }
+      .wrapper-best .content {
+        padding: 24px 0 25px;
+      }
     }
+
+    .flat-best-attorneys.home3 {
+      padding-bottom: 100px !important;
+      .heading-section {
+        margin-bottom: 100px !important;
+      }
+    }
+
     .heading-section2 {
       margin-bottom: 42px;
     }
@@ -267,16 +301,39 @@
         }
       }
     }
+
     .flat-success .wrap-success .wrap-ordinal .box-ordinal {
       width: 100%;
     }
-    .flat-case.home2 {
-      padding-left: 15px;
-      padding-right: 15px;
-    }
+   
     .flat-counter {
       padding-bottom: 100px;
     }
+    .flat-best-awards {
+      padding-bottom: 0 !important;
+      .heading-section.style-sc {
+        margin-bottom: 40px;
+      }
+    }
+
+    .flat-success.home3 {
+      padding-bottom: 90px;
+    }
+
+    .flat-blog.home3 {
+      padding-top: 100px;
+    }
+    .flat-faq.flat-contact-faq {
+      background: unset;
+    }
+    .flat-contact .wrap-contact {
+      padding-right: 0;
+    }
+    .flat-contact .wrap-contact .heading-section2 {
+      padding-bottom: 40px;
+      margin-bottom: 50px;
+    }
+
   }
   
 
@@ -288,9 +345,14 @@
     .tf-section {
       padding: 80px 0;
     }
-
+  
+    .flat-success.home3,
     .flat-practice {
       padding-bottom: 70px;
+    }
+
+    .flat-blog.home3 {
+      padding-top: 80px;
     }
 
     .themesflat-pagination {
@@ -323,7 +385,10 @@
           display: block;
         }
         .top-bar-left {
-          margin-bottom: 10px;
+          margin-bottom: 8px;
+          h5 {
+            line-height: 21px;
+          }
         }
       }
     }
@@ -464,10 +529,25 @@
 
     .slider .slider-item {
       padding: 100px 0;
+      h1 {
+        font-size: 66px;
+        line-height: 78px;
+      }
     }
 
     .slider.home2 .slider-item {
       padding: 210px 0 160px;
+      .content {
+        padding: 0;
+      }
+    }
+
+    .slider.home3 .slider-item {
+      padding: 180px 0 110px;
+      .content {
+        padding: 0;
+      }
+      
     }
 
     .flat-about {
@@ -545,7 +625,7 @@
     }
 
     .flat-best-attorneys {
-      padding-bottom: 50px;
+      padding-bottom: 50px !important;
       .wrapper-best .content {
         padding: 22px 0 25px;
       }
@@ -561,7 +641,7 @@
     }
 
     .flat-success {
-      padding-bottom: 70px;
+      padding-bottom: 60px;
       .wrap-image {
         margin-bottom: 30px;
         .image-3 {
@@ -585,6 +665,64 @@
         }
       }
     }
+
+    .flat-best-awards .wrap-awards {
+      flex-wrap: wrap;
+      justify-content: center;
+      .box-awards {
+        margin-right: 15px;
+        margin-left: 15px;
+        margin-bottom: 30px;
+        &:last-child {
+          margin-right: unset; 
+        }
+      }
+    }
+    .flat-best-attorneys {
+      padding-bottom: 0px !important;
+    }
+    .flat-best-awards .row-boder {
+      padding-bottom: 23px;
+    }
+  
+    .flat-icon-practice2.home3 {
+      padding-bottom: 50px;
+    }
+
+    .flat-best-attorneys.home3 {
+      padding-bottom: 80px !important;
+      .button-best {
+        margin-top: 15px;
+      }
+    }
+
+    .flat-testimonials.home3 {
+      padding: 80px 0px ;
+    }
+
+    .flat-faq.flat-contact-faq {
+      img {
+        margin-bottom: 30px;
+      }
+    }
+
+    .flat-contact .wrap-contact .box-title {
+      padding-left: 0px;
+      margin-bottom: 50px;
+    }
+
+    .col-mobi2 {
+      display: none;
+    }
+    .slider.home2 .slider-item .content .button-1 {
+      margin-bottom: 10px;
+    }
+
+    #site-logo-inner.style3 {
+      left: 50%;
+      transform: translate(-50%,-50% );
+    }
+
 
   }
 

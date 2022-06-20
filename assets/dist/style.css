@@ -1014,7 +1014,7 @@ a:hover, a:focus {
   transition: all 0.3s ease;
 }
 .link-style-5 a:focus, .link-style-5 a:hover {
-  color: var(--primary-color10);
+  color: var(--primary-color8);
   text-decoration: none;
   outline: 0;
   -webkit-transition: all 0.3s ease;
@@ -1061,7 +1061,7 @@ a:hover, a:focus {
 }
 
 .text-color-5 {
-  color: var(--primary-color8) !important;
+  color: #F6F6F6 !important;
 }
 
 .text-color-6 {
@@ -1073,7 +1073,7 @@ a:hover, a:focus {
 }
 
 .text-color-8 {
-  color: var(--primary-color10) !important;
+  color: #C29765 !important;
 }
 
 .text-color-9 {
@@ -1091,9 +1091,8 @@ a:hover, a:focus {
   --primary-color5: rgba(255, 255, 255, 0.3);
   --primary-color6: #23262912;
   --primary-color7: #FFFFFFB2;
-  --primary-color8: #F6F6F6;
+  --primary-color8: #C29765;
   --primary-color9: #165153;
-  --primary-color10: #C29765;
 }
 
 /* Header
@@ -1182,7 +1181,7 @@ header {
   color: #C29765;
 }
 #top-bar.home2 .content-left a:hover {
-  color: var(--primary-color10);
+  color: var(--primary-color8);
 }
 #top-bar.home2::before {
   display: none;
@@ -1224,6 +1223,9 @@ header {
 .wrap-email .title-email {
   margin-top: -2px;
   margin-left: 20px;
+}
+.wrap-email .title-email a:hover {
+  color: var(--primary-color9);
 }
 
 .box-phone {
@@ -1319,6 +1321,10 @@ header {
   color: var(--primary-color);
 }
 
+#main-nav.home3 > ul > li > a {
+  color: var(--primary-color);
+}
+
 /* Sub Menu */
 #main-nav .sub-menu {
   position: absolute;
@@ -1371,6 +1377,14 @@ header {
   color: var(--primary-color3);
 }
 
+#main-nav.home2 > ul > .current-menu-item > a {
+  color: var(--primary-color8);
+}
+
+#main-nav.home3 > ul > .current-menu-item > a {
+  color: #739798;
+}
+
 #main-nav li:hover .sub-menu {
   opacity: 1;
   visibility: visible;
@@ -1388,7 +1402,12 @@ header {
 
 #main-nav.home2 .sub-menu li.current-item a,
 #main-nav.home2 .sub-menu li a:hover {
-  color: var(--primary-color10);
+  color: var(--primary-color8);
+}
+
+#main-nav.home3 .sub-menu li.current-item a,
+#main-nav.home3 .sub-menu li a:hover {
+  color: var(--primary-color9);
 }
 
 #main-nav > ul > li .sub-menu li {
@@ -1427,8 +1446,12 @@ header {
   width: 12px;
 }
 
-#main-nav > ul > li .sub-menu li a::after {
-  background: var(--primary-color10);
+#main-nav.home2 > ul > li .sub-menu li a::after {
+  background: var(--primary-color8);
+}
+
+#main-nav.home3 > ul > li .sub-menu li a::after {
+  background: var(--primary-color9);
 }
 
 /* Mobile Menu */
@@ -1480,9 +1503,35 @@ header {
   border-top: 1px solid rgba(138, 138, 160, 0.3);
 }
 
+.style3 #main-nav-mobi .current-item > a,
+.style3 #main-nav-mobi ul > li > a:hover {
+  color: var(--primary-color9);
+}
+
+.style2 #main-nav-mobi .current-item > a,
+.style2 #main-nav-mobi ul > li > a:hover {
+  color: var(--primary-color8);
+}
+
 #main-nav-mobi .current-item > a,
 #main-nav-mobi ul > li > a:hover {
   color: var(--primary-color3);
+}
+
+.style2 #main-nav-mobi .menu-item-has-children.current-menu-item .arrow:before {
+  background-color: var(--primary-color8);
+}
+
+.style2 #main-nav-mobi ul > li.current-menu-item > a {
+  color: var(--primary-color8);
+}
+
+.style3 #main-nav-mobi .menu-item-has-children.current-menu-item .arrow:before {
+  background-color: var(--primary-color9);
+}
+
+.style3 #main-nav-mobi ul > li.current-menu-item > a {
+  color: var(--primary-color9);
 }
 
 #main-nav-mobi .menu-item-has-children .arrow {
@@ -1696,7 +1745,10 @@ header {
   color: #fff;
 }
 
-.style2 .mobile-button::before, .style2 .mobile-button::after,
+.mobile-button.home3::before, .mobile-button.home3::after,
+.mobile-button.home3 span,
+.style2 .mobile-button::before,
+.style2 .mobile-button::after,
 .style2 .mobile-button span {
   background-color: var(--primary-color);
 }
@@ -1917,11 +1969,19 @@ header {
 }
 
 .widget-menu.home2 ul li a::after {
-  background: var(--primary-color10);
+  background: var(--primary-color8);
 }
 
 .widget-menu.home2 ul li a:hover {
-  color: var(--primary-color10);
+  color: var(--primary-color8);
+}
+
+.widget-menu.home3 ul li a::after {
+  background: var(--primary-color9);
+}
+
+.widget-menu.home3 ul li a:hover {
+  color: var(--primary-color9);
 }
 
 .widget.style-4 {
@@ -2011,7 +2071,10 @@ header {
   color: var(--primary-color3);
 }
 .widget .recent-news.home2 li a:hover {
-  color: var(--primary-color10);
+  color: var(--primary-color8);
+}
+.widget .recent-news.home3 li a:hover {
+  color: var(--primary-color9);
 }
 
 /* widget-subcribe */
@@ -2071,10 +2134,19 @@ header {
 }
 
 .widget-subcribe.home2 .form-subcribe button {
-  background: var(--primary-color10);
-  border: 1px solid var(--primary-color10);
+  background: var(--primary-color8);
+  border: 1px solid var(--primary-color8);
 }
 .widget-subcribe.home2 .form-subcribe button:hover {
+  background: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.widget-subcribe.home3 .form-subcribe button {
+  background: var(--primary-color9);
+  border: 1px solid var(--primary-color9);
+}
+.widget-subcribe.home3 .form-subcribe button:hover {
   background: var(--primary-color);
   border: 1px solid var(--primary-color);
 }
@@ -2173,7 +2245,7 @@ header {
 
 /* side bar */
 .side-bar .widget {
-  background-color: var(--primary-color8);
+  background-color: #F6F6F6;
   padding: 46px 50px 50px 49px;
   margin-bottom: 30px;
 }
@@ -2391,7 +2463,7 @@ header {
   font-weight: 600;
   font-family: "Open Sans";
   display: inline-block;
-  color: var(--primary-color10);
+  color: var(--primary-color8);
 }
 
 .progress-skill .couter .chart span.percent::after {
@@ -2482,10 +2554,10 @@ header {
 }
 
 .home2.tf-2 .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background-color: var(--primary-color10) !important;
+  background-color: var(--primary-color8) !important;
 }
 .home2.tf-2 .swiper-pagination-bullet.swiper-pagination-bullet-active::before {
-  border: 1px solid var(--primary-color10);
+  border: 1px solid var(--primary-color8);
 }
 
 .home3.tf-3 .swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -2523,7 +2595,7 @@ header {
   padding: 0 30%;
 }
 .heading-section.home2 .title-section::before {
-  background-color: var(--primary-color10);
+  background-color: var(--primary-color8);
 }
 .heading-section.home3 .title-section::before {
   background-color: var(--primary-color9);
