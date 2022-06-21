@@ -83,6 +83,13 @@
   background-color: var(--primary-color3);
 }
 
+.sc-button.btn-4 {
+  background-color: var(--primary-color3);
+}
+.sc-button.btn-4::after {
+  background-color: var(--primary-color2);
+}
+
 .sc-button.btn-6 {
   background-color: var(--primary-color3);
 }
@@ -757,6 +764,119 @@
   animation: 0.3s link-icon linear;
   color: var(--primary-color);
 }
+.flat-practice.page {
+  padding-bottom: 90px;
+}
+.flat-practice.page .practice-box {
+  margin-bottom: 16px;
+}
+
+.flat-practice-details .img-wrap {
+  margin-bottom: 33px;
+}
+.flat-practice-details .post {
+  padding: 0 200px 0 200px;
+}
+.flat-practice-details .post .practice-box {
+  margin-left: -2px;
+  margin-bottom: 29px;
+}
+.flat-practice-details .post .practice-box .content {
+  align-items: center;
+}
+.flat-practice-details .post .practice-box .content h1 {
+  color: var(--primary-color3);
+  margin-top: 3px;
+}
+.flat-practice-details .post .practice-box .content h3 {
+  font-size: 32px;
+  font-weight: 700;
+}
+.flat-practice-details .post .practice-box .content h3 span {
+  margin-left: 7px;
+}
+.flat-practice-details .post .practice-box .content p {
+  margin-left: 4px;
+}
+.flat-practice-details .post .text-box {
+  margin-bottom: 44px;
+  padding-left: 3px;
+}
+.flat-practice-details .post .text-one {
+  margin-bottom: 38px;
+  padding-left: 3px;
+}
+.flat-practice-details .post .title-check {
+  padding-left: 3px;
+  margin-bottom: 47px;
+}
+.flat-practice-details .post .title2-h3 {
+  margin-bottom: 24px;
+}
+.flat-practice-details .post .flat-best-attorneys.page {
+  padding: 0 0 31px;
+}
+.flat-practice-details .post .flat-best-attorneys.page .wrapper-best a {
+  top: 59.4%;
+  left: 57%;
+}
+.flat-practice-details .post .flat-faq .flat-accordion .flat-toggle .toggle-title.active {
+  background-color: var(--primary-color3);
+  border-bottom: 1px solid var(--primary-color3);
+}
+.flat-practice-details.practice-sidebar {
+  padding-top: 104px;
+}
+.flat-practice-details.practice-sidebar .post {
+  padding: 0;
+}
+.flat-practice-details.practice-sidebar .post .text-box {
+  margin-bottom: 39px;
+}
+.flat-practice-details.practice-sidebar .post .img-sidebar {
+  margin-bottom: 41px;
+}
+.flat-practice-details.practice-sidebar .post .text-02 {
+  margin-bottom: 44px;
+}
+.flat-practice-details.practice-sidebar .side-bar .flat-icon-practice {
+  margin-top: 16px;
+  margin-bottom: 30px;
+  padding: 0;
+}
+.flat-practice-details.practice-sidebar .side-bar .flat-icon-practice .wrapper-icon {
+  margin-bottom: 10px;
+}
+.flat-practice-details.practice-sidebar .side-bar .flat-icon-practice .wrapper-icon .box-icon {
+  margin-right: 0;
+}
+.flat-practice-details.practice-sidebar .side-bar .flat-icon-practice .wrapper-icon .content {
+  padding: 0px 29px 0 27px;
+  width: 270px;
+}
+.flat-practice-details.practice-sidebar .side-bar .flat-icon-practice .wrapper-icon:hover .content {
+  padding: 0px 26px 0 23px;
+  width: 267px;
+  transform: translateX(3px);
+}
+.flat-practice-details.practice-sidebar .side-bar .widget.style-4.home {
+  padding: 45px 50px 50px;
+  margin-bottom: 0;
+  background: unset;
+  background-image: url(../images/backgroup-secsion/bg-pratice-sidebar.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.flat-practice-details.practice-sidebar .side-bar .widget.style-4.home .overlay {
+  background: rgba(35, 38, 41, 0.8980392157);
+}
+.flat-practice-details.practice-sidebar .side-bar .widget.style-4.home .respond-comment {
+  position: relative;
+}
+.flat-practice-details.practice-sidebar .side-bar .widget.style-4.home .respond-comment p {
+  padding-right: 30px;
+}
 
 .flat-practice.home2 {
   padding: 0;
@@ -918,6 +1038,14 @@
   padding-bottom: 20px;
   margin-bottom: 60px;
 }
+.flat-about.page {
+  padding-top: 180px;
+  padding-bottom: 118px;
+}
+.flat-about.page .mark-a {
+  color: rgba(177, 66, 51, 0.1019607843);
+  top: 54px;
+}
 
 .flat-icon-practice {
   background: rgba(177, 66, 51, 0.0705882353);
@@ -976,14 +1104,14 @@
   z-index: 999999;
 }
 .flat-icon-practice .wrapper-icon:hover .box-icon {
-  background-color: var(--primary-color3);
+  background-color: var(--primary-color3) !important;
 }
 .flat-icon-practice .wrapper-icon:hover .box-icon svg {
   fill: #fff;
   transform: rotateY(180deg);
 }
 .flat-icon-practice .wrapper-icon:hover .content {
-  background-color: var(--primary-color3);
+  background-color: var(--primary-color3) !important;
 }
 .flat-icon-practice .wrapper-icon:hover .content h3 {
   color: var(--primary-color);
@@ -992,6 +1120,13 @@
 .flat-icon-practice .wrapper-icon:hover .content i {
   animation: 0.4s link-icon linear;
   color: var(--primary-color);
+}
+.flat-icon-practice.page {
+  background: unset;
+}
+.flat-icon-practice.page .wrapper-icon .box-icon,
+.flat-icon-practice.page .wrapper-icon .content {
+  background: #FAF2F1;
 }
 
 .flat-icon-practice2 .heading-section {
@@ -1146,6 +1281,18 @@
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+.flat-testimonials.home3.page-h3 {
+  padding-top: 0;
+}
+.flat-testimonials.page {
+  background: rgba(177, 66, 51, 0.0705882353);
+  padding-top: 82px;
+  padding-bottom: 115px;
+}
+.flat-testimonials.page .testimonial-post {
+  padding-bottom: 0;
+  border-bottom: unset;
 }
 
 .flat-case .swiper-container {
@@ -1389,9 +1536,43 @@
 .flat-best-attorneys.home3 .button-best a {
   background-color: var(--primary-color9);
 }
+.flat-best-attorneys.page {
+  padding-bottom: 98px;
+}
+.flat-best-attorneys.page .wrapper-best {
+  margin-top: 0px;
+}
+.flat-best-attorneys.page .wrapper-best .box-img a i {
+  color: var(--primary-color3);
+}
+.flat-best-attorneys.page .button-best {
+  margin-top: 30px;
+}
 
 .flat-best-awards {
   padding-bottom: 0;
+}
+.flat-best-awards .heading-section.style-sc {
+  margin: 0;
+}
+.flat-best-awards .heading-section.style-sc h5 {
+  margin-bottom: 7px;
+}
+.flat-best-awards .heading-section.style-sc .title-style {
+  line-height: 58px;
+  padding-bottom: 9px;
+  margin-bottom: 21px;
+}
+.flat-best-awards .heading-section.style-sc .title-style::before {
+  bottom: 0;
+  left: 0px;
+  background-color: var(--primary-color9);
+  width: 50px;
+  height: 2px;
+  transform: translateX(0%);
+}
+.flat-best-awards .heading-section.style-sc p {
+  margin-bottom: 50px;
 }
 .flat-best-awards .row-boder {
   padding-bottom: 43px;
@@ -1411,6 +1592,9 @@
 }
 .flat-best-awards .wrap-awards .box-awards:hover img {
   filter: sepia(0.5);
+}
+.flat-best-awards.page {
+  padding-bottom: 102px;
 }
 
 .flat-contact-faq {

@@ -68,6 +68,7 @@
       margin-bottom: 105px;
     }
 
+    .flat-icon-practice2.home3,
     .flat-icon-practice {
       padding-bottom: 70px;
     }
@@ -236,8 +237,8 @@
     }
 
     .flat-best-attorneys {
-      padding-bottom: 72px !important;
-      .heading-section {
+      padding-bottom: 72px;
+      .heading-section.home2 {
         margin-bottom: 50px !important;
         p {
           margin-bottom: 30px !important;
@@ -248,23 +249,23 @@
       }
     }
 
+    .flat-testimonials.page,
     .flat-best-attorneys.home3 {
-      padding-bottom: 100px !important;
-      .heading-section {
-        margin-bottom: 100px !important;
-      }
+      padding-bottom: 100px ;
     }
 
     .heading-section2 {
       margin-bottom: 42px;
     }
+
     .flat-contact-faq {
       background: #f6f6f6;
+      .wrap-contact {
+        margin-bottom: 60px;
+        padding: 0;
+      }
     }
-    .flat-contact-faq .wrap-contact {
-      margin-bottom: 60px;
-      padding: 0;
-    }
+    
     #comments .comment-form .text-call {
       margin-bottom: 40px;
     }
@@ -292,6 +293,7 @@
         margin-top:60px;
       }
     }
+
     .flat-success {
       padding-bottom: 80px;
       .wrap-success {
@@ -299,18 +301,17 @@
         h2 {
           padding: 0;
         }
+        .wrap-ordinal .box-ordinal {
+          width: 100%;
+        }
       }
-    }
-
-    .flat-success .wrap-success .wrap-ordinal .box-ordinal {
-      width: 100%;
     }
    
     .flat-counter {
       padding-bottom: 100px;
     }
     .flat-best-awards {
-      padding-bottom: 0 !important;
+      padding-bottom: 0;
       .heading-section.style-sc {
         margin-bottom: 40px;
       }
@@ -323,15 +324,45 @@
     .flat-blog.home3 {
       padding-top: 100px;
     }
+
     .flat-faq.flat-contact-faq {
       background: unset;
     }
+
     .flat-contact .wrap-contact {
       padding-right: 0;
+      .heading-section2 {
+        padding-bottom: 40px;
+        margin-bottom: 50px;
+      }
     }
-    .flat-contact .wrap-contact .heading-section2 {
-      padding-bottom: 40px;
-      margin-bottom: 50px;
+
+    .flat-practice.page {
+      padding-bottom: 70px;
+      .practice-box {
+        margin-bottom: 24px;
+      }
+    }
+
+    .flat-practice-details .post .flat-best-attorneys.page {
+      padding: 0 0 21px;
+    }
+
+    .flat-practice-details.practice-sidebar {
+      padding-top: 90px;
+    }
+
+    .flat-practice-details.practice-sidebar .side-bar .flat-icon-practice {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .wrapper-icon {
+        width: 49%;
+      }
+    }
+
+    .flat-practice-details.practice-sidebar .side-bar .widget.style-4.home {
+      padding: 45px 30px 50px;
     }
 
   }
@@ -539,6 +570,9 @@
       padding: 210px 0 160px;
       .content {
         padding: 0;
+        .button-1 {
+          margin-bottom: 10px;
+        }
       }
     }
 
@@ -547,7 +581,6 @@
       .content {
         padding: 0;
       }
-      
     }
 
     .flat-about {
@@ -565,22 +598,35 @@
 
     .flat-icon-practice {
       padding-bottom: 50px;
+      .wrapper-icon {
+        .box-icon {
+          width: 29%;
+        }
+        .content {
+          width: 71%;
+          i {
+            margin-left: 6px;
+          }
+        }
+      }
+      
     }
-    .flat-icon-practice .wrapper-icon .box-icon {
-      width: 29%;
-    }
-    .flat-icon-practice .wrapper-icon .content {
-      width: 71%;
-    }
-    .flat-icon-practice .wrapper-icon .content i {
-      margin-left: 6px;
-    }
+
     .flat-testimonials {
       padding-top: 75px;
+      .testimonial-post h1 {
+        font-size: 58px;
+      }
     }
-    .flat-testimonials .testimonial-post h1 {
-      font-size: 58px;
+
+    .flat-testimonials.page {
+      padding: 75px 0 80px;
     }
+
+    .flat-testimonials.home3 {
+      padding: 80px 0px ;
+    }
+
     .flat-video {
       padding-bottom: 185px;
       h1 {
@@ -588,9 +634,11 @@
         line-height: 70px;
       }
     }
+
     .flat-blog.home {
       padding-bottom: 50px;
     }
+
     .flat-brand {
       padding-bottom: 80px;
       .brand-slider {
@@ -606,10 +654,10 @@
 
     .flat-practice.home2 {
       margin-top: -50px;
-    }
-
-    .flat-practice.home2 .wrap-practice .practice-box {
-      padding: 25px 15px;
+      .wrap-practice .practice-box {
+        padding: 25px 15px;
+      }
+  
     }
 
     .flat-about.home2 .progress-box2,
@@ -678,26 +726,21 @@
         }
       }
     }
-    .flat-best-attorneys {
-      padding-bottom: 0px !important;
-    }
+   
     .flat-best-awards .row-boder {
       padding-bottom: 23px;
     }
-  
+    .flat-best-awards.page,
     .flat-icon-practice2.home3 {
       padding-bottom: 50px;
     }
 
+    .flat-best-attorneys.page,
     .flat-best-attorneys.home3 {
       padding-bottom: 80px !important;
       .button-best {
         margin-top: 15px;
       }
-    }
-
-    .flat-testimonials.home3 {
-      padding: 80px 0px ;
     }
 
     .flat-faq.flat-contact-faq {
@@ -714,15 +757,54 @@
     .col-mobi2 {
       display: none;
     }
-    .slider.home2 .slider-item .content .button-1 {
-      margin-bottom: 10px;
-    }
 
     #site-logo-inner.style3 {
       left: 50%;
       transform: translate(-50%,-50% );
     }
 
+    .flat-practice.page {
+      padding:0 0 50px;
+    }
+
+    .flat-practice-details {
+      .post {
+        .practice-box {
+          margin-bottom: 20px;
+        }
+        .text-box {
+          margin-bottom: 35px;
+        }
+        .text-2,
+        .text-one {
+          margin-bottom: 30px;
+        }
+        .flat-best-attorneys.page {
+          padding-bottom: 20px !important;
+        }
+      }
+    }
+
+    .flat-practice-details.practice-sidebar .side-bar .flat-icon-practice {
+      display: unset;
+      .wrapper-icon {
+        width: 100%;
+        .box-icon {
+          width: 29%;
+        }
+        .content {
+          width: 71%;
+        }
+      }
+    }
+
+    .flat-practice-details.practice-sidebar .post .text-02,
+    .flat-practice-details.practice-sidebar .post .img-sidebar,
+    .flat-practice-details.practice-sidebar .post .text-box {
+      margin-bottom: 35px;
+    }
+
+   
 
   }
 

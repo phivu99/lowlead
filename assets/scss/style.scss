@@ -896,6 +896,9 @@ label.error {
 .mb-38 {
     margin-bottom: 38px;
 }
+.mt-2 {
+    margin-top: 2px;
+}
 .pl-2 {
     padding-left: 2px !important;
 }
@@ -2540,6 +2543,7 @@ header {
     margin-right: 78px;
 }
 
+.flat-about .progress-skill .couter2 .chart2,
 .flat-about .progress-skill .couter .chart {
     position: relative;
     display: inline-block;
@@ -2556,6 +2560,7 @@ header {
     text-align: center;
 }
 
+.progress-skill .couter2 .chart2 span.percent2,
 .progress-skill .couter .chart span.percent {
     position: absolute;
     top: 50%;
@@ -2568,6 +2573,11 @@ header {
     color: var(--primary-color8);
 }
 
+.progress-skill .couter2 .chart2 span.percent2 {
+    color: var(--primary-color3);
+}
+
+.progress-skill .couter2 .chart2 span.percent2::after,
 .progress-skill .couter .chart span.percent::after {
     content: "%";
 }
@@ -2835,6 +2845,18 @@ header {
         }
     }
     &:hover .hover-style.hv5::before {
+        transform: scale(1, 1) ;
+        transform-origin: center;
+    }  
+    // hover 6
+    .hover-style.hv6 {
+        &::before {
+            transform-origin: unset;
+            background: #B1423380;
+            transform: scale(1, 0 );
+        }
+    }
+    &:hover .hover-style.hv6::before {
         transform: scale(1, 1) ;
         transform-origin: center;
     }  
