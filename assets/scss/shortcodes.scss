@@ -833,122 +833,6 @@
     }  
 }
 
-.flat-practice-details {
-    .img-wrap {
-        margin-bottom: 33px;
-    }
-    .post {
-        padding: 0 200px 0 200px;
-        .practice-box {
-            margin-left: -2px;
-            margin-bottom: 29px;
-            .content {
-                align-items: center;
-                h1 {
-                    color: var(--primary-color3);
-                    margin-top: 3px
-                }
-                h3 {
-                    font-size: 32px;
-                    font-weight: 700;
-                    span {
-                        margin-left: 7px;
-                    }
-                }
-                p {
-                    margin-left: 4px;
-                }
-            }
-        }
-        .text-box {
-            margin-bottom: 44px;
-            padding-left: 3px;
-        }
-        .text-one {
-            margin-bottom: 38px;
-            padding-left: 3px;
-        }
-        .title-check {
-            padding-left: 3px;
-            margin-bottom: 47px;
-        }
-        .title2-h3 {
-            margin-bottom: 24px;
-        }
-        .flat-best-attorneys.page {
-            padding: 0 0 31px;
-            .wrapper-best a {
-                top: 59.4%;
-                left: 57%;
-            }
-        }
-        
-        .flat-faq .flat-accordion .flat-toggle .toggle-title.active {
-            background-color: var(--primary-color3);
-            border-bottom: 1px solid var(--primary-color3);
-        }
-        
-    }
-    &.practice-sidebar {
-        padding-top: 104px;
-        .post {
-            padding: 0;
-            .text-box {
-                margin-bottom: 39px;
-            }
-            .img-sidebar {
-                margin-bottom: 41px;
-            }
-            .text-02 {
-                margin-bottom: 44px;
-            }
-        }
-        .side-bar {
-            .flat-icon-practice {
-                margin-top: 16px;
-                margin-bottom: 30px;
-                padding: 0;
-                .wrapper-icon {
-                    margin-bottom: 10px;
-                    .box-icon {
-                        margin-right: 0;
-                    }
-                    .content {
-                        padding: 0px 29px 0 27px;
-                        width: 270px;
-                    }
-                    &:hover {
-                        .content {
-                            padding: 0px 26px 0 23px;
-                            width: 267px;
-                            transform: translateX(3px);    
-                        }
-                    }
-                }
-            }
-            .widget.style-4.home {
-                padding: 45px 50px 50px;
-                margin-bottom: 0;
-                background: unset;
-                background-image: url(../images/backgroup-secsion/bg-pratice-sidebar.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                position: relative;
-                .overlay {
-                    background: #232629E5;
-                }
-                .respond-comment {
-                    position: relative;
-                    p {
-                        padding-right: 30px;
-                    }
-                }
-            }
-        }
-    }
-    
-}
-
 .flat-practice {
     &.home2 {
         padding: 0;
@@ -1005,7 +889,6 @@
 }
 
 // flat about
-
 .flat-about {
     position: relative;
     padding-bottom: 120px;
@@ -1448,6 +1331,11 @@
             }
         } 
     }
+    &.page {
+        .case-box {
+            margin-bottom: 30px;
+        }
+    }
 }
 
 .flat-video {
@@ -1633,6 +1521,16 @@
         }
         .button-best {
             margin-top: 30px;
+        }
+    }
+    &.page2 {
+        padding-bottom: 118px;
+        &.style {
+            padding-bottom: 90px;
+        }
+        .row-boder {
+            border-bottom: 1px solid var(--primary-color6);
+            padding-bottom: 30px;
         }
     }
 }
@@ -2010,6 +1908,280 @@
      }
 }
 
+// flat practice details
+.flat-practice-details {
+    .img-wrap {
+        margin-bottom: 33px;
+    }
+    .post {
+        padding: 0 200px 0 200px;
+        .practice-box {
+            margin-left: -2px;
+            margin-bottom: 29px;
+            .content {
+                align-items: center;
+                h1 {
+                    color: var(--primary-color3);
+                    margin-top: 3px
+                }
+                h3 {
+                    font-size: 32px;
+                    font-weight: 700;
+                    span {
+                        margin-left: 7px;
+                    }
+                }
+                p {
+                    margin-left: 4px;
+                }
+            }
+        }
+        .text-box {
+            margin-bottom: 44px;
+            padding-left: 3px;
+        }
+        .text-one {
+            margin-bottom: 38px;
+            padding-left: 3px;
+        }
+        .title-check {
+            padding-left: 3px;
+            margin-bottom: 47px;
+        }
+        .title2-h3 {
+            margin-bottom: 24px;
+        }
+        .flat-best-attorneys.page {
+            padding: 0 0 31px;
+            .wrapper-best a {
+                top: 59.4%;
+                left: 57%;
+            }
+        }
+        
+        .flat-faq .flat-accordion .flat-toggle .toggle-title.active {
+            background-color: var(--primary-color3);
+            border-bottom: 1px solid var(--primary-color3);
+        }
+        
+    }
+    &.practice-sidebar {
+        padding-top: 104px;
+        .post {
+            padding: 0;
+            .text-box {
+                margin-bottom: 39px;
+            }
+            .img-sidebar {
+                margin-bottom: 41px;
+            }
+            .text-02 {
+                margin-bottom: 44px;
+            }
+        }
+        .side-bar {
+            .widget.style-4.home {
+                padding: 45px 50px 50px;
+                margin-bottom: 0;
+                background: unset;
+                background-image: url(../images/backgroup-secsion/bg-pratice-sidebar.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+                .overlay {
+                    background: #232629E5;
+                }
+                .respond-comment {
+                    position: relative;
+                    p {
+                        padding-right: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.side-bar {
+    .flat-icon-practice {
+        margin-top: 16px;
+        margin-bottom: 30px;
+        padding: 0;
+        .wrapper-icon {
+            margin-bottom: 10px;
+            .box-icon {
+                margin-right: 0;
+            }
+            .content {
+                padding: 0px 29px 0 27px;
+                width: 270px;
+            }
+            &:hover {
+                .content {
+                    padding: 0px 26px 0 23px;
+                    width: 267px;
+                    transform: translateX(3px);    
+                }
+            }
+        }
+    }
+}
+
+// flat attorneys details
+.flat-attorneys-information {
+    padding-bottom: 45px;
+    .wrap-information {
+        padding-top: 57px;
+      
+        .title-information {
+            margin-bottom: 36px;
+            h2 {
+                margin-bottom: 2px;
+            }
+        }
+        .box-information {
+            border-bottom: 1px solid var(--primary-color6);
+            padding-bottom: 15px;
+            margin-bottom: 62px;
+            .inner-1 {
+                width: 52.6%; 
+            }
+            h4 {
+                margin-bottom: 7px;
+            }
+            .information {
+                margin-bottom: 5px;
+            }
+        }
+        .wrap-phone {
+            h3 {
+                color: #272B2E4D;
+            }
+            h2 {
+                margin-top: -23px;
+                margin-left: 28px;
+            }
+        }
+    }
+}
+
+.flat-attorneys-details {
+    padding-bottom: 120px;
+    .post {
+        .title-h3 {
+            margin-bottom: 14px;
+        }
+        .text-box {
+            margin-bottom: 35px;
+        }
+        .tf-check {
+            margin-bottom: 42px;
+            .wrap-check.style2 {
+                width: 52%;
+            }
+        }
+        .wrap-progress {
+            margin-bottom: 47px;
+        }
+        .flat-faq .wrap-faq {
+            padding-top: 0;
+            .flat-accordion .flat-toggle .toggle-title.active {
+                background-color: var(--primary-color3);
+                border-bottom: 1px solid var(--primary-color3);
+            }
+        }
+    }
+    .side-bar {
+        padding-top: 5px;
+        .widget {
+            padding: 44px 50px 34px 50px;
+            .widget-title {
+                margin-bottom: 26px;
+            }
+            .box-sub-title {
+                margin-bottom: 6px;
+                h4 {
+                    margin-bottom: 6px;
+                }               
+            } 
+            &.widget2 {
+                padding: 46px 50px 35px 50px;
+            }
+            &.widget3 {
+                padding: 46px 50px 50px 50px;
+                .widget-title {
+                    margin-bottom: 30px;
+                }
+            }
+            .box-img img:hover {
+                filter: sepia(0.5);
+            }
+            .icon-social {
+                a {
+                    font-size: 14px;
+                    margin-right: 41px;
+                    color: rgba(35, 38, 41, 0.3);
+                    &:hover {
+                        color: var(--primary-color3);
+                    }
+                }
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+// flat case detail
+.flat-case-details {
+    .post {
+        .img-sidebar {
+            margin-bottom: 41px;
+        }
+        .sub-title {
+            margin-bottom: 6px;
+            margin-left: -2px;
+        }
+        .title-case {
+            margin-bottom: 32px;
+        }
+        .tf-check {
+            margin-left: 3px;
+            margin-bottom: 46px;
+        }
+        .img-box2 {
+            margin-bottom: 46px;
+        }
+        .style-text {
+            margin-bottom: 32px;
+            
+        }
+        .flat-faq .wrap-faq {
+            padding-top: 0;
+            margin-top: -2px;
+        }
+        .flat-faq .flat-accordion .flat-toggle .toggle-title.active {
+            background-color: var(--primary-color3);
+            border-bottom: 1px solid var(--primary-color3);
+        }
+    }
+    .side-bar {
+        .widget {
+            padding: 46px 50px 35px 50px;
+            margin-bottom: 50px;
+            .widget-title {
+                margin-bottom: 26px;              
+            }
+            .box-sub-title {
+                margin-bottom: 5px;
+                h4 {
+                    margin-bottom: 7px;
+                }
+            }
+        }
+    }
+}
 
 
 

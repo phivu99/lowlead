@@ -857,6 +857,10 @@ label.error {
   font-size: 18px;
 }
 
+.fs-32 {
+  font-size: 32px;
+}
+
 .fs-24 {
   font-size: 24px;
   font-weight: 500;
@@ -1816,6 +1820,7 @@ header {
   height: 40px;
   color: var(--primary-color4);
   border: unset;
+  background: #F6F6F6;
 }
 .themesflat-pagination ul li .page-numbers.style::after {
   content: "+";
@@ -2479,6 +2484,29 @@ header {
 .progress-skill .couter2 .chart2 span.percent2::after,
 .progress-skill .couter .chart span.percent::after {
   content: "%";
+}
+
+/* donat progress */
+.progress-bar {
+  margin: 29.5px 0 9px;
+}
+
+.progress-title-holder {
+  padding-bottom: 16px;
+  position: relative;
+}
+
+.progress-content-outter {
+  height: 5px;
+  background-color: var(--primary-color6);
+  border-radius: 5px;
+}
+
+.progress-content {
+  height: 5px;
+  background-color: var(--primary-color3);
+  width: 0%;
+  border-radius: 5px;
 }
 
 .flat-themes .swiper-pagination,

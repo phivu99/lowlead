@@ -857,6 +857,10 @@ label.error {
   font-size: 18px;
 }
 
+.fs-32 {
+  font-size: 32px;
+}
+
 .fs-24 {
   font-size: 24px;
   font-weight: 500;
@@ -1816,6 +1820,7 @@ header {
   height: 40px;
   color: var(--primary-color4);
   border: unset;
+  background: #F6F6F6;
 }
 .themesflat-pagination ul li .page-numbers.style::after {
   content: "+";
@@ -2479,6 +2484,29 @@ header {
 .progress-skill .couter2 .chart2 span.percent2::after,
 .progress-skill .couter .chart span.percent::after {
   content: "%";
+}
+
+/* donat progress */
+.progress-bar {
+  margin: 29.5px 0 9px;
+}
+
+.progress-title-holder {
+  padding-bottom: 16px;
+  position: relative;
+}
+
+.progress-content-outter {
+  height: 5px;
+  background-color: var(--primary-color6);
+  border-radius: 5px;
+}
+
+.progress-content {
+  height: 5px;
+  background-color: var(--primary-color3);
+  width: 0%;
+  border-radius: 5px;
 }
 
 .flat-themes .swiper-pagination,
@@ -3517,113 +3545,6 @@ header {
   margin-bottom: 16px;
 }
 
-.flat-practice-details .img-wrap {
-  margin-bottom: 33px;
-}
-.flat-practice-details .post {
-  padding: 0 200px 0 200px;
-}
-.flat-practice-details .post .practice-box {
-  margin-left: -2px;
-  margin-bottom: 29px;
-}
-.flat-practice-details .post .practice-box .content {
-  align-items: center;
-}
-.flat-practice-details .post .practice-box .content h1 {
-  color: var(--primary-color3);
-  margin-top: 3px;
-}
-.flat-practice-details .post .practice-box .content h3 {
-  font-size: 32px;
-  font-weight: 700;
-}
-.flat-practice-details .post .practice-box .content h3 span {
-  margin-left: 7px;
-}
-.flat-practice-details .post .practice-box .content p {
-  margin-left: 4px;
-}
-.flat-practice-details .post .text-box {
-  margin-bottom: 44px;
-  padding-left: 3px;
-}
-.flat-practice-details .post .text-one {
-  margin-bottom: 38px;
-  padding-left: 3px;
-}
-.flat-practice-details .post .title-check {
-  padding-left: 3px;
-  margin-bottom: 47px;
-}
-.flat-practice-details .post .title2-h3 {
-  margin-bottom: 24px;
-}
-.flat-practice-details .post .flat-best-attorneys.page {
-  padding: 0 0 31px;
-}
-.flat-practice-details .post .flat-best-attorneys.page .wrapper-best a {
-  top: 59.4%;
-  left: 57%;
-}
-.flat-practice-details .post .flat-faq .flat-accordion .flat-toggle .toggle-title.active {
-  background-color: var(--primary-color3);
-  border-bottom: 1px solid var(--primary-color3);
-}
-.flat-practice-details.practice-sidebar {
-  padding-top: 104px;
-}
-.flat-practice-details.practice-sidebar .post {
-  padding: 0;
-}
-.flat-practice-details.practice-sidebar .post .text-box {
-  margin-bottom: 39px;
-}
-.flat-practice-details.practice-sidebar .post .img-sidebar {
-  margin-bottom: 41px;
-}
-.flat-practice-details.practice-sidebar .post .text-02 {
-  margin-bottom: 44px;
-}
-.flat-practice-details.practice-sidebar .side-bar .flat-icon-practice {
-  margin-top: 16px;
-  margin-bottom: 30px;
-  padding: 0;
-}
-.flat-practice-details.practice-sidebar .side-bar .flat-icon-practice .wrapper-icon {
-  margin-bottom: 10px;
-}
-.flat-practice-details.practice-sidebar .side-bar .flat-icon-practice .wrapper-icon .box-icon {
-  margin-right: 0;
-}
-.flat-practice-details.practice-sidebar .side-bar .flat-icon-practice .wrapper-icon .content {
-  padding: 0px 29px 0 27px;
-  width: 270px;
-}
-.flat-practice-details.practice-sidebar .side-bar .flat-icon-practice .wrapper-icon:hover .content {
-  padding: 0px 26px 0 23px;
-  width: 267px;
-  transform: translateX(3px);
-}
-.flat-practice-details.practice-sidebar .side-bar .widget.style-4.home {
-  padding: 45px 50px 50px;
-  margin-bottom: 0;
-  background: unset;
-  background-image: url(../images/backgroup-secsion/bg-pratice-sidebar.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-.flat-practice-details.practice-sidebar .side-bar .widget.style-4.home .overlay {
-  background: rgba(35, 38, 41, 0.8980392157);
-}
-.flat-practice-details.practice-sidebar .side-bar .widget.style-4.home .respond-comment {
-  position: relative;
-}
-.flat-practice-details.practice-sidebar .side-bar .widget.style-4.home .respond-comment p {
-  padding-right: 30px;
-}
-
 .flat-practice.home2 {
   padding: 0;
   margin-top: -73px;
@@ -4129,6 +4050,9 @@ header {
 .flat-case.home3 .case-box:hover .content p {
   color: var(--primary-color);
 }
+.flat-case.page .case-box {
+  margin-bottom: 30px;
+}
 
 .flat-video {
   padding-top: 159px;
@@ -4293,6 +4217,16 @@ header {
 }
 .flat-best-attorneys.page .button-best {
   margin-top: 30px;
+}
+.flat-best-attorneys.page2 {
+  padding-bottom: 118px;
+}
+.flat-best-attorneys.page2.style {
+  padding-bottom: 90px;
+}
+.flat-best-attorneys.page2 .row-boder {
+  border-bottom: 1px solid var(--primary-color6);
+  padding-bottom: 30px;
 }
 
 .flat-best-awards {
@@ -4642,6 +4576,254 @@ header {
 .flat-contact #comments button:hover {
   background-color: var(--primary-color3);
   border: 1px solid var(--primary-color3);
+}
+
+.flat-practice-details .img-wrap {
+  margin-bottom: 33px;
+}
+.flat-practice-details .post {
+  padding: 0 200px 0 200px;
+}
+.flat-practice-details .post .practice-box {
+  margin-left: -2px;
+  margin-bottom: 29px;
+}
+.flat-practice-details .post .practice-box .content {
+  align-items: center;
+}
+.flat-practice-details .post .practice-box .content h1 {
+  color: var(--primary-color3);
+  margin-top: 3px;
+}
+.flat-practice-details .post .practice-box .content h3 {
+  font-size: 32px;
+  font-weight: 700;
+}
+.flat-practice-details .post .practice-box .content h3 span {
+  margin-left: 7px;
+}
+.flat-practice-details .post .practice-box .content p {
+  margin-left: 4px;
+}
+.flat-practice-details .post .text-box {
+  margin-bottom: 44px;
+  padding-left: 3px;
+}
+.flat-practice-details .post .text-one {
+  margin-bottom: 38px;
+  padding-left: 3px;
+}
+.flat-practice-details .post .title-check {
+  padding-left: 3px;
+  margin-bottom: 47px;
+}
+.flat-practice-details .post .title2-h3 {
+  margin-bottom: 24px;
+}
+.flat-practice-details .post .flat-best-attorneys.page {
+  padding: 0 0 31px;
+}
+.flat-practice-details .post .flat-best-attorneys.page .wrapper-best a {
+  top: 59.4%;
+  left: 57%;
+}
+.flat-practice-details .post .flat-faq .flat-accordion .flat-toggle .toggle-title.active {
+  background-color: var(--primary-color3);
+  border-bottom: 1px solid var(--primary-color3);
+}
+.flat-practice-details.practice-sidebar {
+  padding-top: 104px;
+}
+.flat-practice-details.practice-sidebar .post {
+  padding: 0;
+}
+.flat-practice-details.practice-sidebar .post .text-box {
+  margin-bottom: 39px;
+}
+.flat-practice-details.practice-sidebar .post .img-sidebar {
+  margin-bottom: 41px;
+}
+.flat-practice-details.practice-sidebar .post .text-02 {
+  margin-bottom: 44px;
+}
+.flat-practice-details.practice-sidebar .side-bar .widget.style-4.home {
+  padding: 45px 50px 50px;
+  margin-bottom: 0;
+  background: unset;
+  background-image: url(../images/backgroup-secsion/bg-pratice-sidebar.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.flat-practice-details.practice-sidebar .side-bar .widget.style-4.home .overlay {
+  background: rgba(35, 38, 41, 0.8980392157);
+}
+.flat-practice-details.practice-sidebar .side-bar .widget.style-4.home .respond-comment {
+  position: relative;
+}
+.flat-practice-details.practice-sidebar .side-bar .widget.style-4.home .respond-comment p {
+  padding-right: 30px;
+}
+
+.side-bar .flat-icon-practice {
+  margin-top: 16px;
+  margin-bottom: 30px;
+  padding: 0;
+}
+.side-bar .flat-icon-practice .wrapper-icon {
+  margin-bottom: 10px;
+}
+.side-bar .flat-icon-practice .wrapper-icon .box-icon {
+  margin-right: 0;
+}
+.side-bar .flat-icon-practice .wrapper-icon .content {
+  padding: 0px 29px 0 27px;
+  width: 270px;
+}
+.side-bar .flat-icon-practice .wrapper-icon:hover .content {
+  padding: 0px 26px 0 23px;
+  width: 267px;
+  transform: translateX(3px);
+}
+
+.flat-attorneys-information {
+  padding-bottom: 45px;
+}
+.flat-attorneys-information .wrap-information {
+  padding-top: 57px;
+}
+.flat-attorneys-information .wrap-information .title-information {
+  margin-bottom: 36px;
+}
+.flat-attorneys-information .wrap-information .title-information h2 {
+  margin-bottom: 2px;
+}
+.flat-attorneys-information .wrap-information .box-information {
+  border-bottom: 1px solid var(--primary-color6);
+  padding-bottom: 15px;
+  margin-bottom: 62px;
+}
+.flat-attorneys-information .wrap-information .box-information .inner-1 {
+  width: 52.6%;
+}
+.flat-attorneys-information .wrap-information .box-information h4 {
+  margin-bottom: 7px;
+}
+.flat-attorneys-information .wrap-information .box-information .information {
+  margin-bottom: 5px;
+}
+.flat-attorneys-information .wrap-information .wrap-phone h3 {
+  color: rgba(39, 43, 46, 0.3019607843);
+}
+.flat-attorneys-information .wrap-information .wrap-phone h2 {
+  margin-top: -23px;
+  margin-left: 28px;
+}
+
+.flat-attorneys-details {
+  padding-bottom: 120px;
+}
+.flat-attorneys-details .post .title-h3 {
+  margin-bottom: 14px;
+}
+.flat-attorneys-details .post .text-box {
+  margin-bottom: 35px;
+}
+.flat-attorneys-details .post .tf-check {
+  margin-bottom: 42px;
+}
+.flat-attorneys-details .post .tf-check .wrap-check.style2 {
+  width: 52%;
+}
+.flat-attorneys-details .post .wrap-progress {
+  margin-bottom: 47px;
+}
+.flat-attorneys-details .post .flat-faq .wrap-faq {
+  padding-top: 0;
+}
+.flat-attorneys-details .post .flat-faq .wrap-faq .flat-accordion .flat-toggle .toggle-title.active {
+  background-color: var(--primary-color3);
+  border-bottom: 1px solid var(--primary-color3);
+}
+.flat-attorneys-details .side-bar {
+  padding-top: 5px;
+}
+.flat-attorneys-details .side-bar .widget {
+  padding: 44px 50px 34px 50px;
+}
+.flat-attorneys-details .side-bar .widget .widget-title {
+  margin-bottom: 26px;
+}
+.flat-attorneys-details .side-bar .widget .box-sub-title {
+  margin-bottom: 6px;
+}
+.flat-attorneys-details .side-bar .widget .box-sub-title h4 {
+  margin-bottom: 6px;
+}
+.flat-attorneys-details .side-bar .widget.widget2 {
+  padding: 46px 50px 35px 50px;
+}
+.flat-attorneys-details .side-bar .widget.widget3 {
+  padding: 46px 50px 50px 50px;
+}
+.flat-attorneys-details .side-bar .widget.widget3 .widget-title {
+  margin-bottom: 30px;
+}
+.flat-attorneys-details .side-bar .widget .box-img img:hover {
+  filter: sepia(0.5);
+}
+.flat-attorneys-details .side-bar .widget .icon-social a {
+  font-size: 14px;
+  margin-right: 41px;
+  color: rgba(35, 38, 41, 0.3);
+}
+.flat-attorneys-details .side-bar .widget .icon-social a:hover {
+  color: var(--primary-color3);
+}
+.flat-attorneys-details .side-bar .widget:last-child {
+  margin-bottom: 0;
+}
+
+.flat-case-details .post .img-sidebar {
+  margin-bottom: 41px;
+}
+.flat-case-details .post .sub-title {
+  margin-bottom: 6px;
+  margin-left: -2px;
+}
+.flat-case-details .post .title-case {
+  margin-bottom: 32px;
+}
+.flat-case-details .post .tf-check {
+  margin-left: 3px;
+  margin-bottom: 46px;
+}
+.flat-case-details .post .img-box2 {
+  margin-bottom: 46px;
+}
+.flat-case-details .post .style-text {
+  margin-bottom: 32px;
+}
+.flat-case-details .post .flat-faq .wrap-faq {
+  padding-top: 0;
+  margin-top: -2px;
+}
+.flat-case-details .post .flat-faq .flat-accordion .flat-toggle .toggle-title.active {
+  background-color: var(--primary-color3);
+  border-bottom: 1px solid var(--primary-color3);
+}
+.flat-case-details .side-bar .widget {
+  padding: 46px 50px 35px 50px;
+  margin-bottom: 50px;
+}
+.flat-case-details .side-bar .widget .widget-title {
+  margin-bottom: 26px;
+}
+.flat-case-details .side-bar .widget .box-sub-title {
+  margin-bottom: 5px;
+}
+.flat-case-details .side-bar .widget .box-sub-title h4 {
+  margin-bottom: 7px;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -26,11 +26,13 @@
     padding: 0px;
   }
 
-  .flat-blog.home {
+  .flat-best-attorneys.page2.style,
+.flat-blog.home {
     padding-bottom: 70px;
   }
 
-  .flat-brand {
+  .flat-best-attorneys.page2,
+.flat-brand {
     padding-bottom: 100px;
   }
 
@@ -343,6 +345,38 @@
 
   .flat-practice-details.practice-sidebar .side-bar .widget.style-4.home {
     padding: 45px 30px 50px;
+  }
+
+  .flat-attorneys-information {
+    padding-bottom: 30px;
+  }
+  .flat-attorneys-information .img-information img {
+    width: 100%;
+  }
+  .flat-attorneys-information .wrap-information {
+    padding-top: 0;
+  }
+  .flat-attorneys-information .wrap-information .title-information {
+    margin-bottom: 25px;
+  }
+  .flat-attorneys-information .wrap-information .box-information {
+    margin-bottom: 40px;
+  }
+  .flat-attorneys-information .wrap-information .box-information .inner-1 {
+    width: 62.6%;
+  }
+  .flat-attorneys-information .wrap-information .wrap-phone {
+    display: block;
+  }
+  .flat-attorneys-information .wrap-information .wrap-phone h2 {
+    margin: 0;
+  }
+
+  .flat-attorneys-details {
+    padding-bottom: 100px;
+  }
+  .flat-attorneys-details .side-bar {
+    padding-top: 0px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -768,6 +802,52 @@
 .flat-practice-details.practice-sidebar .post .img-sidebar,
 .flat-practice-details.practice-sidebar .post .text-box {
     margin-bottom: 35px;
+  }
+
+  .flat-practice-details.practice-sidebar {
+    padding-top: 65px;
+  }
+
+  .flat-best-attorneys.page2.style {
+    padding-bottom: 50px !important;
+  }
+
+  .flat-best-attorneys.page2 .row-boder {
+    padding-bottom: 15px;
+  }
+
+  .flat-attorneys-information {
+    padding-bottom: 45px;
+  }
+  .flat-attorneys-information .img-information {
+    margin-bottom: 30px;
+  }
+  .flat-attorneys-information .wrap-information {
+    padding-top: 0;
+  }
+  .flat-attorneys-information .wrap-information .title-information {
+    margin-bottom: 20px;
+  }
+  .flat-attorneys-information .wrap-information .box-information {
+    margin-bottom: 30px;
+  }
+
+  .flat-attorneys-details .post .wrap-progress {
+    margin-bottom: 40px;
+  }
+
+  .flat-attorneys-details .post .tf-check .wrap-check.style2 {
+    width: unset;
+    margin-bottom: 25px;
+  }
+
+  .flat-attorneys-details .side-bar .widget.widget2,
+.flat-attorneys-details .side-bar .widget {
+    padding: 46px 15px 38px 15px;
+  }
+
+  .flat-attorneys-details .side-bar .widget.widget3 {
+    padding: 46px 15px 45px 15px;
   }
 }
 @media (max-width: 767px) and (min-width: 378px) {
