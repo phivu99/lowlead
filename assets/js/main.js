@@ -176,7 +176,7 @@
     // Header Fixed
     var headerFixed = function () {
         if ($('body').hasClass('header-fixed')) {
-            var nav = $('#header_main');
+            var nav = $('#header_main,.wrap-menu');
             if (nav.length) {
                 var offsetTop = nav.offset().top,
                 // headerHeight = nav.height(),

@@ -1178,6 +1178,12 @@
 .flat-testimonials.home3.page-h3 {
   padding-top: 0;
 }
+.flat-testimonials.home3.page-testi {
+  padding-bottom: 91px;
+}
+.flat-testimonials.home3.page-testi .testimonial-post {
+  margin-bottom: 23px;
+}
 .flat-testimonials.page {
   background: rgba(177, 66, 51, 0.0705882353);
   padding-top: 82px;
@@ -2050,6 +2056,134 @@
 }
 .flat-case-details .side-bar .widget .box-sub-title h4 {
   margin-bottom: 7px;
+}
+.flat-case-details .side-bar .flat-icon-practice {
+  margin-bottom: 0;
+}
+
+.flat-faq-page {
+  padding-top: 115px;
+  padding-bottom: 75px;
+}
+.flat-faq-page .post .title-h3 {
+  margin-bottom: 14px;
+}
+.flat-faq-page .post .text-2 {
+  padding-left: 0px;
+  margin-bottom: 39px;
+}
+.flat-faq-page .post .flat-faq .wrap-faq {
+  padding-top: 0;
+  margin-bottom: 46px;
+}
+.flat-faq-page .post .flat-faq .wrap-faq.style {
+  margin-bottom: 0;
+}
+.flat-faq-page .post .flat-faq .flat-accordion .flat-toggle .toggle-title.active {
+  background-color: var(--primary-color3);
+  border-bottom: 1px solid var(--primary-color3);
+}
+.flat-faq-page .flat-practice-details.practice-sidebar {
+  padding-top: 5px;
+}
+.flat-faq-page .flat-practice-details.practice-sidebar .side-bar .widget.style-4.home {
+  margin-bottom: 30px;
+}
+
+.flat-gallery .wrap-gallery {
+  margin-bottom: 30px;
+  position: relative;
+  perspective: 500px;
+}
+.flat-gallery .wrap-gallery .post {
+  width: 100%;
+  height: 100%;
+  padding: 5% 8%;
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateY(90deg) rotateX(45deg);
+  transform-origin: 50%;
+  background: rgba(177, 66, 51, 0.5019607843);
+  opacity: 0;
+  transition: all 0.4s ease-in;
+}
+.flat-gallery .wrap-gallery .post .title {
+  position: absolute;
+  bottom: 8.7%;
+  left: 8%;
+  color: #fff;
+}
+.flat-gallery .wrap-gallery .post .title p {
+  text-align: left;
+}
+.flat-gallery .wrap-gallery .post img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.flat-gallery .wrap-gallery:hover .post {
+  transform: translate(-50%, -50%) rotateY(0deg) rotateX(0deg);
+  opacity: 1;
+}
+.flat-gallery .wrap-gallery:hover .post img {
+  transition-delay: 0.4s;
+  transform: translate(-50%, -50%);
+}
+
+.tf-map .map-content {
+  width: 100%;
+  height: 850px;
+}
+.tf-map .wrap-map {
+  background: var(--primary-color3);
+  padding: 46px 50px 35px;
+  margin-top: -169%;
+}
+.tf-map .wrap-map h3 {
+  color: var(--primary-color);
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 48px;
+}
+.tf-map .wrap-map h3::after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: var(--primary-color);
+}
+.tf-map .wrap-map h3 span {
+  margin-left: 6px;
+}
+.tf-map .wrap-map .inner {
+  margin-bottom: 5px;
+}
+.tf-map .wrap-map .inner p {
+  color: rgba(255, 255, 255, 0.6980392157);
+}
+.tf-map .wrap-map .inner h4 {
+  color: var(--primary-color);
+  margin-bottom: 7px;
+}
+
+.flat-contact-page {
+  padding-top: 113px;
+}
+.flat-contact-page .text {
+  margin-bottom: 40px;
+}
+.flat-contact-page #comments .comment-form .text-call {
+  padding-right: 600px;
 }
 
 /*# sourceMappingURL=shortcodes.css.map */

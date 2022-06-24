@@ -5,6 +5,7 @@
 @import "animate.css";
 @import "jquery.fancybox.min.css";
 @import "font-awesome.css";
+@import "magnific-popup.css";
 @import "swiper-bundle.min.css";
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
@@ -1594,7 +1595,7 @@ header {
             &::before {
                 font-family: "Font Awesome 5 Pro";
                 content: "\f107";
-                color: var(--primary-color);
+                color: var(--primary-color2);
             }
         }
     }
@@ -1816,21 +1817,36 @@ header {
 
 .header_1 {
     &.is-fixed {
-        // position: fixed;
-        top: -161px;
+        position: unset;
+        top: -200px;
         left: 0;
         width: 100%;
         box-shadow: 1px 1px 5px 0px rgb(0 0 0 / 30%);
         z-index: 9999;
-        background: #edeaf6;
+        background: var(--primary-color);
         border: none;
         opacity: 0;
         @include transition5;
         #main-nav > ul > li > a {
-            color: var(--primary-color);
+            color: var(--primary-color2);
         }
+        &.style2 {
+            background: var(--primary-color2);
+            #main-nav > ul > li > a {
+                color: var(--primary-color);
+            }
+        }
+        &.style3 {
+            // position: unset;
+            .wrap-menu {
+                background: unset;
+                // position: fixed;
+                // position: fixed;
+            }
+        }   
     }
 }
+
 
 .header_1.is-fixed.is-small {
     top: 0;
@@ -2889,7 +2905,6 @@ header {
     }  
 }
 
-// 
 
 
 // .flat-img a img {

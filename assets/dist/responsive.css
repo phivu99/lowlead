@@ -8,6 +8,10 @@
   .blog-details .post {
     padding: 0 100px;
   }
+
+  .flat-case-details .post .img-box2 img {
+    width: 48%;
+  }
 }
 @media only screen and (max-width: 991px) {
   .mobile-button {
@@ -334,16 +338,16 @@
     padding-top: 90px;
   }
 
-  .flat-practice-details.practice-sidebar .side-bar .flat-icon-practice {
+  .side-bar .flat-icon-practice {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .flat-practice-details.practice-sidebar .side-bar .flat-icon-practice .wrapper-icon {
+  .side-bar .flat-icon-practice .wrapper-icon {
     width: 49%;
   }
 
-  .flat-practice-details.practice-sidebar .side-bar .widget.style-4.home {
+  .side-bar .widget.style-4.home {
     padding: 45px 30px 50px;
   }
 
@@ -377,6 +381,36 @@
   }
   .flat-attorneys-details .side-bar {
     padding-top: 0px;
+  }
+
+  .flat-case-details {
+    padding-bottom: 90px;
+  }
+
+  .flat-testimonials.home3.page-testi {
+    padding-bottom: 60px;
+  }
+  .flat-testimonials.home3.page-testi .testimonial-post {
+    margin-bottom: 40px;
+  }
+  .flat-testimonials.home3.page-testi .testimonial-post .content .text-testi {
+    margin-bottom: 30px;
+  }
+
+  .flat-faq-page .flat-practice-details.practice-sidebar {
+    padding: 0;
+  }
+
+  .flat-contact-page #comments .comment-form .text-call {
+    padding-right: 0;
+  }
+
+  .tf-map .map-content {
+    height: 750px;
+  }
+
+  .flat-contact-page {
+    padding-top: 90px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -785,16 +819,16 @@
     padding-bottom: 20px !important;
   }
 
-  .flat-practice-details.practice-sidebar .side-bar .flat-icon-practice {
+  .side-bar .flat-icon-practice {
     display: unset;
   }
-  .flat-practice-details.practice-sidebar .side-bar .flat-icon-practice .wrapper-icon {
+  .side-bar .flat-icon-practice .wrapper-icon {
     width: 100%;
   }
-  .flat-practice-details.practice-sidebar .side-bar .flat-icon-practice .wrapper-icon .box-icon {
+  .side-bar .flat-icon-practice .wrapper-icon .box-icon {
     width: 29%;
   }
-  .flat-practice-details.practice-sidebar .side-bar .flat-icon-practice .wrapper-icon .content {
+  .side-bar .flat-icon-practice .wrapper-icon .content {
     width: 71%;
   }
 
@@ -835,19 +869,78 @@
   .flat-attorneys-details .post .wrap-progress {
     margin-bottom: 40px;
   }
-
   .flat-attorneys-details .post .tf-check .wrap-check.style2 {
     width: unset;
     margin-bottom: 25px;
   }
-
   .flat-attorneys-details .side-bar .widget.widget2,
 .flat-attorneys-details .side-bar .widget {
     padding: 46px 15px 38px 15px;
   }
-
   .flat-attorneys-details .side-bar .widget.widget3 {
     padding: 46px 15px 45px 15px;
+  }
+
+  .flat-case-details .post .img-sidebar {
+    margin-bottom: 30px;
+  }
+  .flat-case-details .post .title-case {
+    margin-bottom: 25px;
+  }
+  .flat-case-details .post .img-box2 {
+    display: block;
+    margin-bottom: 35px;
+  }
+  .flat-case-details .post .img-box2 img {
+    width: unset;
+  }
+  .flat-case-details .post .img-box2 .img-1 {
+    margin-bottom: 20px;
+  }
+  .flat-case-details .post .text-2.style-text {
+    margin-bottom: 28px;
+  }
+  .flat-case-details .side-bar .widget {
+    padding: 46px 15px 35px;
+    margin-bottom: 40px;
+  }
+
+  .flat-testimonials.home3.page-testi {
+    padding-bottom: 40px;
+  }
+  .flat-testimonials.home3.page-testi .testimonial-post {
+    margin-bottom: 40px;
+  }
+  .flat-testimonials.home3.page-testi .testimonial-post .content .text-testi {
+    margin-bottom: 26px;
+  }
+
+  .flat-faq-page {
+    padding-bottom: 50px;
+  }
+  .flat-faq-page .post .flat-faq .wrap-faq {
+    margin-bottom: 35px;
+  }
+  .flat-faq-page .post .text-2 {
+    margin-bottom: 33px;
+  }
+  .flat-faq-page .side-bar .widget.style-4.home {
+    padding: 45px 15px 50px !important;
+  }
+
+  .tf-map .wrap-map {
+    padding: 45px 15px 35px;
+    margin-top: 15px;
+  }
+  .tf-map .wrap-map h3 {
+    margin-bottom: 32px;
+  }
+
+  .flat-contact-page {
+    padding-top: 70px;
+  }
+  .flat-contact-page .text {
+    margin-bottom: 35px;
   }
 }
 @media (max-width: 767px) and (min-width: 378px) {

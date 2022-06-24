@@ -512,6 +512,25 @@
         });
     }
 
+    var popupGallery = function () {
+        if ($().magnificPopup) {
+        $(".popup-gallery").magnificPopup({
+            type: "image",
+            tLoading: "Loading image #%curr%...",
+            removalDelay: 600,
+            mainClass: "my-mfp-slide-bottom",
+            gallery: {
+                enabled: true,
+                navigateByImgClick: true,
+                preload: [ 0, 1 ]
+            },
+            image: {
+                tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
+            }
+        });
+        }
+    } 
+
     var donatProgress = function () {
         $(".content-progress-box").appear(function () {
             $('.progress-bar').each(function() {
@@ -532,14 +551,6 @@
         });
     };
 
-    // $(document).ready(function() {
-    //     // get the name of uploaded file
-    //     $('input[type="file"]').change(function(){
-    //       var value = $("input[type='file']").val();
-    //       $('.js-value').text(value);
-    //     });
-    //   });
-
     // Dom Ready
     $(function () {
         goTop();
@@ -553,7 +564,7 @@
         popUpLightBox();
         toggleMenu();
         Parallax();
-        flatCounter();
+        // flatCounter();
         tabs();
         buttonHeart();
         flatProgressBar();
@@ -569,6 +580,7 @@
         dropdown('#item-create2');
         flcustominput();
         copycode();
+        popupGallery();
         donatProgress();
         swiper_tab();
         viewShop();
