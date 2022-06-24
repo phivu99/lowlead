@@ -1,3 +1,9 @@
+/**
+  * Name: Lowlead | Attorney & Lawyers HTML Template
+  * Version: 1.0
+  * Author: Themesflat
+  * Author URI: http://www.themesflat.com
+*/
 @import "shortcodes.css";
 @import "responsive.css";
 @import "animate.css";
@@ -8,6 +14,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 @import "bootstrap.css";
+/**
+  	* Reset Browsers
+    * General
+	* Elements
+  	* Forms
+	* Typography
+	* Extra classes
+	* link style
+	* Root
+	* Header
+	* Site Logo
+    * Menu
+    * Header Fixed
+    * Pagination
+    * Scroll Top
+    * Footer
+    * Widget
+    * PreLoad
+    * side bar
+    * up load
+    * circle progress 
+    * donat progress
+    * swiper pagination slider
+    * heading 
+    * hover 
+*/
 html,
 body,
 div,
@@ -1764,7 +1796,7 @@ header {
 
 /* Header Fixed */
 .header_1.is-fixed {
-  position: unset;
+  position: relative;
   top: -200px;
   left: 0;
   width: 100%;
@@ -1784,12 +1816,25 @@ header {
 }
 .header_1.is-fixed.style2 {
   background: var(--primary-color2);
+  top: -300px;
 }
 .header_1.is-fixed.style2 #main-nav > ul > li > a {
   color: var(--primary-color);
 }
-.header_1.is-fixed.style3 .wrap-menu {
-  background: unset;
+.header_1.is-fixed.style2 #site-header-inner.home2 {
+  border-bottom: unset;
+}
+.header_1.is-fixed.style3 {
+  height: 0;
+  margin-top: -1px;
+}
+.header_1.is-fixed.style3 #main-nav > ul > li > a {
+  color: var(--primary-color);
+}
+.header_1.is-fixed.style3 .box-phone,
+.header_1.is-fixed.style3 .wrap-email,
+.header_1.is-fixed.style3 #site-logo {
+  display: none;
 }
 
 .header_1.is-fixed.is-small {
@@ -2431,10 +2476,11 @@ header {
   content: "\f1c1";
 }
 
-#upload-profile {
+.uploadFile {
   position: relative;
 }
-#upload-profile #tf-upload-img {
+.uploadFile #filename2,
+.uploadFile #filename {
   position: absolute;
   top: 0;
   right: 0;
@@ -2617,6 +2663,13 @@ header {
   border: 1px solid var(--primary-color9);
 }
 
+.slider.home3.tf-3 .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: var(--primary-color3) !important;
+}
+.slider.home3.tf-3 .swiper-pagination-bullet.swiper-pagination-bullet-active::before {
+  border: 1px solid var(--primary-color3);
+}
+
 .heading-section {
   margin-bottom: 121px;
 }
@@ -2783,6 +2836,34 @@ header {
   transform-origin: center;
 }
 
+/* 
+   * Button 
+   * page title
+   * Swiper button
+   * Slider
+   * blog page
+   * flat blog details
+   * video
+   * flat practice
+   * flat about
+   * flat icon practice
+   * flat testimonials
+   * flat case
+   * flat video
+   * flat brand 
+   * flat best attorneys team
+   * flat best awards
+   * live contact faq
+   * flat faq
+   * flat success
+   * flat counter
+   * flat practice details
+   * flat attorneys details
+   * flat case detail
+   * flat faq page
+   * flat gallery
+   * flat contact page
+*/
 .themes-container {
   position: relative;
   margin-left: auto;
@@ -2962,7 +3043,6 @@ header {
   padding: 0 19.5px;
 }
 
-/* swiper button */
 .slider.home3 .swiper-button-next,
 .slider.home3 .swiper-button-prev,
 .slider .swiper-button-next,
@@ -2980,14 +3060,6 @@ header {
   transition: all 0.3s ease;
   background: var(--primary-color3);
 }
-.slider.home3 .swiper-button-next i,
-.slider.home3 .swiper-button-prev i,
-.slider .swiper-button-next i,
-.slider .swiper-button-prev i {
-  font-size: 28px;
-  font-weight: 300;
-  color: #fff;
-}
 .slider.home3 .swiper-button-next.swiper-button-disabled,
 .slider.home3 .swiper-button-prev.swiper-button-disabled,
 .slider .swiper-button-next.swiper-button-disabled,
@@ -2997,20 +3069,20 @@ header {
   opacity: 0;
 }
 
-.slider.home3 .swiper-button-next,
+.slider.home3 .swiper-button-next2,
 .slider .swiper-button-next {
   right: 30px;
   left: auto;
 }
 
-.slider.home3 .swiper-button-prev,
+.slider.home3 .swiper-button-prev2,
 .slider .swiper-button-prev {
   right: unset;
   left: 30px;
 }
 
-.slider.home3:hover .swiper-button-next,
-.slider.home3:hover .swiper-button-prev,
+.slider.home3:hover .swiper-button-next2,
+.slider.home3:hover .swiper-button-prev2,
 .slider:hover .swiper-button-next,
 .slider:hover .swiper-button-prev {
   opacity: 1;
@@ -3020,11 +3092,43 @@ header {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.slider.home3:hover .swiper-button-next.swiper-button-disabled,
-.slider.home3:hover .swiper-button-prev.swiper-button-disabled,
+.slider.home3:hover .swiper-button-next2.swiper-button-disabled,
+.slider.home3:hover .swiper-button-prev2.swiper-button-disabled,
 .slider:hover .swiper-button-next.swiper-button-disabled,
 .slider:hover .swiper-button-prev.swiper-button-disabled {
   opacity: 1;
+}
+
+.slider.home3 .swiper-button-next2,
+.slider.home3 .swiper-button-prev2 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  top: 50%;
+  z-index: 99;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background: var(--primary-color3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider.home3 .swiper-button-next2 i,
+.slider.home3 .swiper-button-prev2 i {
+  font-size: 28px;
+  font-weight: 300;
+  color: #fff;
+}
+.slider.home3 .swiper-button-next2.swiper-button-disabled,
+.slider.home3 .swiper-button-prev2.swiper-button-disabled {
+  background: rgba(255, 255, 255, 0.031372549);
+  border-color: rgb(255, 255, 255);
+  opacity: 0;
 }
 
 .slider {
@@ -3097,18 +3201,21 @@ header {
 }
 
 /* animation slider */
+.flat-slider .signature-slider,
 .flat-slider .flat-bt-slider,
 .flat-slider .sub-heading,
 .flat-slider .heading {
   transform: translateY(400px);
 }
 
+.flat-slider .signature-slider,
 .flat-slider .flat-bt-slider,
 .flat-slider .sub-heading,
 .flat-slider .heading {
   opacity: 0;
 }
 
+.swiper-slide-active .flat-slider .signature-slider,
 .swiper-slide-active .flat-slider .flat-bt-slider,
 .swiper-slide-active .flat-slider .sub-heading,
 .swiper-slide-active .flat-slider .heading {
@@ -3122,23 +3229,27 @@ header {
   transition-delay: 1100ms;
 }
 
+.swiper-slide-active .flat-slider .signature-slider,
 .swiper-slide-active .flat-slider .flat-bt-slider,
 .swiper-slide-active .flat-slider .sub-heading,
 .swiper-slide-active .flat-slider .heading {
   transform: translateY(0) !important;
 }
 
-.mainslider.home .swiper-slide-active .image,
 .swiper-slide-active .flat-slider .heading {
   transition-delay: 800ms !important;
 }
 
 .swiper-slide-active .flat-slider .sub-heading {
-  transition-delay: 700ms !important;
+  transition-delay: 550ms !important;
 }
 
 .swiper-slide-active .flat-slider .flat-bt-slider {
   transition-delay: 1100ms;
+}
+
+.swiper-slide-active .flat-slider .signature-slider {
+  transition-delay: 900ms;
 }
 
 /* blog
@@ -3650,13 +3761,13 @@ header {
   margin-bottom: 40px;
 }
 .flat-about .about-box .img-author {
-  background: #fff;
   border-radius: 50%;
   width: 50px;
   height: 50px;
   position: relative;
   overflow: hidden;
   margin-right: -29px;
+  padding: 0;
 }
 .flat-about .about-box .img-author::before {
   content: "";
@@ -3864,7 +3975,7 @@ header {
   padding-bottom: 30px;
 }
 
-.flat-icon-practice2 {
+.flat-icon-practice2.home3 {
   padding-bottom: 80px;
 }
 .flat-icon-practice2.home3 .wrapper-icon .box-icon svg {
@@ -4372,6 +4483,13 @@ header {
 .flat-success {
   padding-bottom: 98px;
 }
+.flat-success .hover-c {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
 .flat-success .hover-c:hover .mark-c {
   z-index: -1;
 }
@@ -4403,6 +4521,13 @@ header {
 }
 .flat-success .wrap-image .box-img .image-1:hover {
   filter: drop-shadow(2px 4px 6px #C29765);
+}
+.flat-success .wrap-image .box-img .image-2 {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .flat-success .wrap-image .box-img .image-2:hover {
   filter: drop-shadow(2px 4px 6px #C29765);

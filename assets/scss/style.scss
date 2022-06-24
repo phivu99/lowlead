@@ -1,5 +1,12 @@
 @use './abstracts/' as *;
 
+/**
+  * Name: Lowlead | Attorney & Lawyers HTML Template
+  * Version: 1.0
+  * Author: Themesflat
+  * Author URI: http://www.themesflat.com
+*/
+
 @import "shortcodes.css";
 @import "responsive.css";
 @import "animate.css";
@@ -10,6 +17,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 @import "bootstrap.css";
+
+
+/**
+  	* Reset Browsers
+    * General
+	* Elements
+  	* Forms
+	* Typography
+	* Extra classes
+	* link style
+	* Root
+	* Header
+	* Site Logo
+    * Menu
+    * Header Fixed
+    * Pagination
+    * Scroll Top
+    * Footer
+    * Widget
+    * PreLoad
+    * side bar
+    * up load
+    * circle progress 
+    * donat progress
+    * swiper pagination slider
+    * heading 
+    * hover 
+*/
 
 html,
 body,
@@ -1817,7 +1852,7 @@ header {
 
 .header_1 {
     &.is-fixed {
-        position: unset;
+        position: relative;
         top: -200px;
         left: 0;
         width: 100%;
@@ -1832,17 +1867,26 @@ header {
         }
         &.style2 {
             background: var(--primary-color2);
+            top: -300px;
             #main-nav > ul > li > a {
                 color: var(--primary-color);
             }
+            #site-header-inner.home2 {
+                border-bottom: unset;
+            }
         }
         &.style3 {
-            // position: unset;
-            .wrap-menu {
-                background: unset;
-                // position: fixed;
-                // position: fixed;
+            height: 0;
+            margin-top: -1px;
+            #main-nav > ul > li > a {
+                color: var(--primary-color);
             }
+            .box-phone,
+            .wrap-email,
+            #site-logo {
+                display: none;
+            }
+
         }   
     }
 }
@@ -2534,9 +2578,10 @@ header {
     }
 }
 
-#upload-profile {
+.uploadFile {
     position: relative;
-    #tf-upload-img {
+    #filename2,
+    #filename {
         position: absolute;
         top: 0;
         right: 0;
@@ -2694,6 +2739,7 @@ header {
     margin-top: 66px;
 }
 
+
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background-color: var(--primary-color3) !important;
     &::before {
@@ -2712,6 +2758,13 @@ header {
     background-color: var(--primary-color9) !important;
     &::before {
         border: 1px solid var(--primary-color9);
+    }
+}
+
+.slider.home3.tf-3 .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: var(--primary-color3) !important;
+    &::before {
+        border: 1px solid var(--primary-color3);
     }
 }
 

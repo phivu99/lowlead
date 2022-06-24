@@ -31,8 +31,8 @@ var swiper =  new Swiper(".mainslider2", {
         crossFade: true,
     },
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next2",
+        prevEl: ".swiper-button-prev2",
     },
     pagination: {
         el: ".swiper-pagination2",
