@@ -1331,7 +1331,7 @@ header {
 
 #main-nav > ul > li {
   float: left;
-  padding: 31px 30px 30px 13px;
+  padding: 52px 30px 51px 13px;
 }
 #main-nav > ul > li > a {
   position: relative;
@@ -1344,6 +1344,9 @@ header {
 }
 #main-nav > ul > li > a:hover {
   color: var(--primary-color3);
+}
+#main-nav > ul.style-menu > li {
+  padding: 34px 30px 33px 13px;
 }
 #main-nav > .menu > li.menu-item-has-children > a::after {
   content: "\f107";
@@ -1796,7 +1799,7 @@ header {
 
 /* Header Fixed */
 .header_1.is-fixed {
-  position: relative;
+  position: fixed;
   top: -200px;
   left: 0;
   width: 100%;

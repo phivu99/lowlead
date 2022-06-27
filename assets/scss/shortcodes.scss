@@ -408,11 +408,12 @@
 /* blog
 --------------------------------------------------*/
 .blog-box {
-    @include transition3;
-    &:hover {
-        -webkit-transform: translateY(-5px);
-        transform        : translateY(-5px);
-    }
+    // @include transition3;
+    // &:hover {
+    //     -webkit-transform: translateY(-5px);
+    //     transform        : translateY(-5px);
+    //     @include transition3;
+    // }
     &.style-article {
         &:hover {
             -webkit-transform: translateY(0px);
@@ -711,7 +712,17 @@
         .style-text {
             width: 50%;
             float: left;
+            &.style-text2 {
+                width: 51.6%;
+                float: left;
+            }
+            &.style-text3 {
+                width: 48.4%;
+                float: left;
+            }
         }
+        
+        
         .phone-wrap,
         .name-wrap {
             padding-right: 15px;
@@ -1076,9 +1087,6 @@
 }
 
 .flat-icon-practice2 {
-    .heading-section {
-        margin-right: 155px;
-    }
     .wrapper-icon {
         border: 1px solid var(--primary-color6);
         padding: 28px 20px 39px 29px;
@@ -1117,6 +1125,21 @@
                 }
             }
         }
+        &.active {
+            background-color: var(--primary-color8);
+            .box-icon {
+                svg {
+                    fill:  #fff;
+                }
+            }
+            .content {
+                p,
+                h3 {
+                    color: var(--primary-color);
+                }
+            }
+        }
+
     }
     .row-boder {
         border-bottom: 1px solid #23262912;
@@ -1134,6 +1157,14 @@
                 }
             }
             &:hover {
+                background-color: var(--primary-color9);
+                .box-icon {
+                    svg {
+                        fill:  #fff;
+                    }
+                }
+            }
+            &.active {
                 background-color: var(--primary-color9);
                 .box-icon {
                     svg {
@@ -1472,6 +1503,7 @@
             padding: 26px 0 20px;
             h3 {
                 margin-bottom: 3px;
+                transition: all 0.3s ease;
                 &:hover {
                     color: var(--primary-color8);
                 }
@@ -1574,6 +1606,9 @@
         padding-top: 3px;
         .box-awards {
             margin-right: 81px;
+            img {
+                transition: all 0.3s ease;
+            }
             &:last-child {
                 margin-right: 0;
             }
@@ -1803,7 +1838,7 @@
             height          : 1px;
             position        : absolute;
             right           : 0;
-            bottom          : 0;
+            bottom          : -0.5px;
             background-color: var(--primary-color8);
             transform       : scale(0, 1);
             transform-origin: center center;
@@ -2196,7 +2231,7 @@
 // flat faq page
 .flat-faq-page {
     padding-top: 115px;
-    padding-bottom: 75px;
+    padding-bottom: 120px;
     .post {
         .title-h3 {
             margin-bottom: 14px;

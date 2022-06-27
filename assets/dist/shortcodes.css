@@ -416,17 +416,6 @@
 
 /* blog
 --------------------------------------------------*/
-.blog-box {
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-.blog-box:hover {
-  -webkit-transform: translateY(-5px);
-  transform: translateY(-5px);
-}
 .blog-box.style-article:hover {
   -webkit-transform: translateY(0px);
   transform: translateY(0px);
@@ -701,6 +690,14 @@
 }
 #comments .comment-form .style-text {
   width: 50%;
+  float: left;
+}
+#comments .comment-form .style-text.style-text2 {
+  width: 51.6%;
+  float: left;
+}
+#comments .comment-form .style-text.style-text3 {
+  width: 48.4%;
   float: left;
 }
 #comments .comment-form .phone-wrap,
@@ -1080,9 +1077,6 @@
   background: #FAF2F1;
 }
 
-.flat-icon-practice2 .heading-section {
-  margin-right: 155px;
-}
 .flat-icon-practice2 .wrapper-icon {
   border: 1px solid var(--primary-color6);
   padding: 28px 20px 39px 29px;
@@ -1132,6 +1126,16 @@
 .flat-icon-practice2 .wrapper-icon:hover .content h3 {
   color: var(--primary-color);
 }
+.flat-icon-practice2 .wrapper-icon.active {
+  background-color: var(--primary-color8);
+}
+.flat-icon-practice2 .wrapper-icon.active .box-icon svg {
+  fill: #fff;
+}
+.flat-icon-practice2 .wrapper-icon.active .content p,
+.flat-icon-practice2 .wrapper-icon.active .content h3 {
+  color: var(--primary-color);
+}
 .flat-icon-practice2 .row-boder {
   border-bottom: 1px solid rgba(35, 38, 41, 0.0705882353);
   padding-bottom: 30px;
@@ -1147,6 +1151,12 @@
   background-color: var(--primary-color9);
 }
 .flat-icon-practice2.home3 .wrapper-icon:hover .box-icon svg {
+  fill: #fff;
+}
+.flat-icon-practice2.home3 .wrapper-icon.active {
+  background-color: var(--primary-color9);
+}
+.flat-icon-practice2.home3 .wrapper-icon.active .box-icon svg {
   fill: #fff;
 }
 
@@ -1465,6 +1475,7 @@
 }
 .flat-best-attorneys .wrapper-best .content h3 {
   margin-bottom: 3px;
+  transition: all 0.3s ease;
 }
 .flat-best-attorneys .wrapper-best .content h3:hover {
   color: var(--primary-color8);
@@ -1556,6 +1567,9 @@
 }
 .flat-best-awards .wrap-awards .box-awards {
   margin-right: 81px;
+}
+.flat-best-awards .wrap-awards .box-awards img {
+  transition: all 0.3s ease;
 }
 .flat-best-awards .wrap-awards .box-awards:last-child {
   margin-right: 0;
@@ -1773,7 +1787,7 @@
   height: 1px;
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -0.5px;
   background-color: var(--primary-color8);
   transform: scale(0, 1);
   transform-origin: center center;
@@ -2135,7 +2149,7 @@
 
 .flat-faq-page {
   padding-top: 115px;
-  padding-bottom: 75px;
+  padding-bottom: 120px;
 }
 .flat-faq-page .post .title-h3 {
   margin-bottom: 14px;

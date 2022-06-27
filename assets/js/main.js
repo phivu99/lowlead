@@ -1,10 +1,9 @@
 /**
-  * Dark Light Mode
   * Header Connect
-  * Loadmore Item
-  * headerFixed
   * retinaLogo
   * ajaxContactForm
+  * Loadmore Item
+  * headerFixed
   * mobileNav
   * ajaxSubscribe
   * alertBox
@@ -148,18 +147,20 @@
         });
     };
 
-    // Header Fixed
     var headerFixed = function () {
         if ($('body').hasClass('header-fixed')) {
-            var nav = $('#header_main,.wrap-menu');
+            var nav = $('#header_main,.wrap-menur');
+
             if (nav.length) {
                 var offsetTop = nav.offset().top,
-                // headerHeight = nav.height(),
-                injectSpace = $('<div />', {
-                    // height: headerHeight
-                }).insertAfter(nav);
+                    headerHeight = nav.height(),
+                    injectSpace = $('<div />', {
+                        height: headerHeight
+                    }).insertAfter(nav);
+                injectSpace.hide();
+
                 $(window).on('load scroll', function () {
-                    if ($(window).scrollTop() > 400) {
+                    if ($(window).scrollTop() > offsetTop) {
                         nav.addClass('is-fixed');
                         injectSpace.show();
                     } else {
